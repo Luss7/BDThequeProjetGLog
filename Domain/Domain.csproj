@@ -41,7 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Album.cs" />
+    <Compile Include="Auteur.cs" />
+    <Compile Include="Categorie.cs" />
+    <Compile Include="Editeur.cs" />
+    <Compile Include="Genre.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Serie.cs" />
+    <Compile Include="Utilisateur.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Domain.cd" />
