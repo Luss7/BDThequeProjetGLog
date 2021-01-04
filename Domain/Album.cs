@@ -20,12 +20,17 @@ namespace Domain
         public Editeur Editeur { get; set; }
      
         public Album() { }
-        public Album(string imagecouv, string titre, Categorie categorie, Serie serie, Editeur editeur)
+
+        public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur, Serie serie)
+            : this(imagecouv, titre, categorie, editeur)
+        {
+            Serie = serie;
+        }
+        public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur)
         {
             ImageCouv = imagecouv;
             Titre = titre;
             Categorie = categorie;
-            Serie = serie;
             Editeur = editeur;
         }
         public List<Auteur> Auteurs
