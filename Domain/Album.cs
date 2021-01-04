@@ -52,6 +52,5 @@ namespace Domain
         {
             _genres.Add(genre);
         }
-
     }
 }

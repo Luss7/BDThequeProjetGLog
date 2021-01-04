@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+  <class name="Utilisateur" table="utilisateur">
+    <id name="Id" column="user_id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <property name="Login" column="user_login" not-null="true"/>
+    <property name="Mdp" column="user_mdp" not-null="true"/>
+    <property name="IsAdmin" column="user_isAdmin" not-null="true"/>
+  </class>
+
+</hibernate-mapping>

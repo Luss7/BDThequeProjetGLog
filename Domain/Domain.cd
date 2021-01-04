@@ -1,49 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
   <Class Name="Domain.Utilisateur">
-    <Position X="1" Y="0.5" Width="2.75" />
+    <Position X="0.75" Y="1" Width="2.75" />
+    <AssociationLine Name="Wishlist" Type="Domain.Album" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.5" Y="2.322" />
+        <Point X="7.75" Y="2.322" />
+        <Point X="7.75" Y="3" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>ACACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <HashCode>ACACIAAACAAAIAAAAAAAAAAACCAAAAAEAAAQAAAAAAA=</HashCode>
       <FileName>Utilisateur.cs</FileName>
     </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Bibliotheque" />
+      <Property Name="Wishlist" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Domain.Album">
-    <Position X="4.25" Y="0.5" Width="2.5" />
+    <Position X="5.5" Y="3" Width="5.5" />
+    <AssociationLine Name="Editeur" Type="Domain.Editeur" FixedFromPoint="true">
+      <Path>
+        <Point X="7.125" Y="6.353" />
+        <Point X="7.125" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Categorie" Type="Domain.Categorie" FixedFromPoint="true">
+      <Path>
+        <Point X="10.125" Y="6.353" />
+        <Point X="10.125" Y="7.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Genres" Type="Domain.Genre" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11" Y="5.125" />
+        <Point X="11.375" Y="5.125" />
+        <Point X="11.375" Y="5.5" />
+        <Point X="13.25" Y="5.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Auteurs" Type="Domain.Auteur" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="5.5" Y="5.188" />
+        <Point X="5.125" Y="5.188" />
+        <Point X="5.125" Y="8.188" />
+        <Point X="3.25" Y="8.188" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAACAAAAQAAAAAAgAAoBBAAAAAAAAAAAAASAADAAAAE=</HashCode>
       <FileName>Album.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Editeur" />
+      <Property Name="Categorie" />
+      <Property Name="Serie" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Genres" />
+      <Property Name="Auteurs" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Domain.Auteur">
-    <Position X="0.75" Y="3.5" Width="2.25" />
+    <Position X="0.5" Y="7.25" Width="2.75" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAACAAAAAAAAA=</HashCode>
       <FileName>Auteur.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Categorie">
-    <Position X="4.25" Y="6.25" Width="2.25" />
+    <Position X="9" Y="7.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Categorie.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Editeur">
-    <Position X="0.75" Y="6.25" Width="2.25" />
+    <Position X="6" Y="7.25" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Editeur.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Genre">
-    <Position X="7" Y="6.25" Width="2.25" />
+    <Position X="13.25" Y="4.5" Width="2.25" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Genre.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Domain.Serie">
-    <Position X="9" Y="4" Width="2" />
+    <Position X="13.25" Y="1.75" Width="2" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Serie.cs</FileName>
