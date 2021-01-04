@@ -13,19 +13,19 @@ namespace Domain
         public virtual string Titre { get; set; }
         public Categorie Categorie { get; set; }
         public Serie Serie { get; set; }
-        public Genre Genre { get; set; }
+
+        private List<Genre> _genres = new List<Genre>();
 
         private List<Auteur> _auteurs = new List<Auteur>();
         public Editeur Editeur { get; set; }
      
         public Album() { }
-        public Album(string imagecouv, string titre, Categorie categorie, Serie serie, Genre genre, Editeur editeur)
+        public Album(string imagecouv, string titre, Categorie categorie, Serie serie, Editeur editeur)
         {
             ImageCouv = imagecouv;
             Titre = titre;
             Categorie = categorie;
             Serie = serie;
-            Genre = genre;
             Editeur = editeur;
         }
         public List<Auteur> Auteurs
@@ -33,11 +33,20 @@ namespace Domain
             get
             { return _auteurs; }
         }
-        public void AddAuteur(Auteur auteur)
+        public void AddAuteur(Genre genre)
         {
-            _auteurs.Add(auteur);
+            _genres.Add(genre);
         }
 
+        public List<Genre> Genres
+        {
+            get
+            { return _genres; }
+        }
+        public void AddGenre(Genre genre)
+        {
+            _genres.Add(genre);
+        }
 
     }
 }
