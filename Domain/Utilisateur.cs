@@ -12,42 +12,22 @@ namespace Domain
         public virtual string Login  { get; set; }
         public virtual string Mdp { get; set; }
         public virtual bool IsAdmin { get; set; }
-
-        private List<Album> _bibliotheque = new List<Album>();
-
-        private List<Album> _wishlist = new List<Album>();
-
-        public Utilisateur() { }
-        public Utilisateur(string login, string mdp)
+        public virtual IList<Album> Bibliotheque { get; set; }
+        public virtual IList<Album> Wishlist { get; set; }
+        public Utilisateur() 
+        {
+            Bibliotheque = new List<Album>();
+            Wishlist = new List<Album>();
+        }
+        public Utilisateur(string login, string mdp) : this()
         {
             Login = login;
             Mdp = mdp;
         }
-
-        public List<Album> Bibliotheque
-        {
-            get
-            { return _bibliotheque; }
-        }
-        public void AddAlbumBibliothèque(Album album)
-        {
-            _bibliotheque.Add(album);
-        }
-
-        public List<Album> Wishlist
-        {
-            get
-            { return _wishlist; }
-        }
-        public void AddAlbumWishlist(Album album)
-        {
-            _wishlist.Add(album);
-        }
-
         public void Acheter(Album album)
         {
-            _wishlist.Remove(album);
-            AddAlbumBibliothèque(album);
+            Wishlist.Remove(album);
+            Bibliotheque.Add(album);
         }
 
     }

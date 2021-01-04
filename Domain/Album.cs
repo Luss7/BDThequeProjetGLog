@@ -13,44 +13,27 @@ namespace Domain
         public virtual string Titre { get; set; }
         public Categorie Categorie { get; set; }
         public Serie Serie { get; set; }
-
-        private List<Genre> _genres = new List<Genre>();
-
-        private List<Auteur> _auteurs = new List<Auteur>();
+        public virtual IList<Genre> Genres { get; set; }
+        public virtual IList<Auteur> Auteurs { get; set; }
         public Editeur Editeur { get; set; }
      
-        public Album() { }
+        public Album() 
+        {
+            Genres = new List<Genre>();
+            Auteurs = new List<Auteur>();
+        }
 
         public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur, Serie serie)
             : this(imagecouv, titre, categorie, editeur)
         {
             Serie = serie;
         }
-        public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur)
+        public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur) : this()
         {
             ImageCouv = imagecouv;
             Titre = titre;
             Categorie = categorie;
             Editeur = editeur;
-        }
-        public List<Auteur> Auteurs
-        {
-            get
-            { return _auteurs; }
-        }
-        public void AddAuteur(Genre genre)
-        {
-            _genres.Add(genre);
-        }
-
-        public List<Genre> Genres
-        {
-            get
-            { return _genres; }
-        }
-        public void AddGenre(Genre genre)
-        {
-            _genres.Add(genre);
         }
     }
 }
