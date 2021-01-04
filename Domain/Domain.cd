@@ -1,28 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
-  <Class Name="Domain.Emprunt">
-    <Position X="5.5" Y="3.5" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAACEAAAAAAAAAAFAAAAAAAAAAAAAAABAAAQAAAAAAA=</HashCode>
-      <FileName>Emprunt.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Livre" />
-      <Property Name="Emprunteur" />
-    </ShowAsAssociation>
-  </Class>
-  <Class Name="Domain.Livre">
-    <Position X="8.25" Y="0.5" Width="3" />
-    <TypeIdentifier>
-      <HashCode>AAACBAAAAQAAAAAEAAABAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Livre.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Domain.Utilisateur">
-    <Position X="3" Y="0.5" Width="2.75" />
+    <Position X="1" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAACAAAAAAACAAAAAAAAA=</HashCode>
+      <HashCode>ACACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
       <FileName>Utilisateur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Album">
+    <Position X="4.25" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAQAAAAAAgAAoBBAAAAAAAAAAAAASAADAAAAE=</HashCode>
+      <FileName>Album.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Auteur">
+    <Position X="0.75" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Auteur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Categorie">
+    <Position X="4.25" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Categorie.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Editeur">
+    <Position X="0.75" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Editeur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Genre">
+    <Position X="7" Y="6.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Genre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Domain.Serie">
+    <Position X="9" Y="4" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serie.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />
