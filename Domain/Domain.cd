@@ -10,7 +10,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>ACACIAAACAAAIAAAAAAAAAAACCAAAAAEAAAQAAAAAAA=</HashCode>
+      <HashCode>ADACAAAACAAAAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAA=</HashCode>
       <FileName>Utilisateur.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -20,18 +20,6 @@
   </Class>
   <Class Name="Domain.Album">
     <Position X="5.5" Y="3" Width="5.5" />
-    <AssociationLine Name="Editeur" Type="Domain.Editeur" FixedFromPoint="true">
-      <Path>
-        <Point X="7.125" Y="6.353" />
-        <Point X="7.125" Y="7.25" />
-      </Path>
-    </AssociationLine>
-    <AssociationLine Name="Categorie" Type="Domain.Categorie" FixedFromPoint="true">
-      <Path>
-        <Point X="10.125" Y="6.353" />
-        <Point X="10.125" Y="7.25" />
-      </Path>
-    </AssociationLine>
     <AssociationLine Name="Genres" Type="Domain.Genre" FixedFromPoint="true" FixedToPoint="true">
       <Path>
         <Point X="11" Y="5.125" />
@@ -49,13 +37,13 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAAAAQAAAAAAgAAoBBAAAAAAAAAAAAASAADAAAAE=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAgAAoBBAAAAAAAAAAAAAAAABAAAAE=</HashCode>
       <FileName>Album.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="Editeur" />
       <Property Name="Categorie" />
       <Property Name="Serie" />
+      <Property Name="Editeur" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Genres" />

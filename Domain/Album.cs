@@ -9,7 +9,7 @@ namespace Domain
     class Album
     {
         public virtual int Id { get; set; }
-        public virtual string ImageCouv { get; set; } //image sous forme d'un lien, voir comment l'afficher et stocker
+        public virtual string ImageCouv { get; set; } //image sous forme d'un nom de fichier, voir comment l'afficher et stocker dans un dossier à part
         public virtual string Titre { get; set; }
         public Categorie Categorie { get; set; }
         public Serie Serie { get; set; }

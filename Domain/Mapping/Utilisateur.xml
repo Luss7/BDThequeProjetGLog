@@ -10,7 +10,15 @@
     </id>
     <property name="Login" column="user_login" not-null="true"/>
     <property name="Mdp" column="user_mdp" not-null="true"/>
-    <property name="IsAdmin" column="user_isAdmin" not-null="true"/>
+    <property name="EstAdmin" column="user_estAdmin" not-null="true"/>
+    <bag name="Bibliotheque" table ="user_bibliotheque" lazy ="true">
+      <key column="user_id"/>
+      <one-to-many class ="Album" column="album_id"/>
+    </bag>
+    <bag name="WishList" table ="user_wishlist" lazy ="true">
+      <key column="user_id"/>
+      <one-to-many class ="Album" column="album_id"/>
+    </bag>
   </class>
 
 </hibernate-mapping>

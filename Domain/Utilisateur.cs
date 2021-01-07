@@ -11,7 +11,7 @@ namespace Domain
         public virtual int Id { get; set; }
         public virtual string Login  { get; set; }
         public virtual string Mdp { get; set; }
-        public virtual bool IsAdmin { get; set; }
+        public virtual bool EstAdmin { get; set; }
         public virtual IList<Album> Bibliotheque { get; set; }
         public virtual IList<Album> Wishlist { get; set; }
         public Utilisateur() 
@@ -19,10 +19,11 @@ namespace Domain
             Bibliotheque = new List<Album>();
             Wishlist = new List<Album>();
         }
-        public Utilisateur(string login, string mdp) : this()
+        public Utilisateur(string login, string mdp,bool estAdmin) : this()
         {
             Login = login;
             Mdp = mdp;
+            EstAdmin = estAdmin;
         }
         public void Acheter(Album album)
         {

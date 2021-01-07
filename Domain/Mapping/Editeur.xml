@@ -1,1 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+                   assembly="Domain"
+                   namespace="Domain">
+
+  <class name="Editeur" table="editeur">
+    <id name="Id" column="editeur_id" type="int">
+      <generator class="native"></generator>
+    </id>
+    <property name="Nom" column="editeur_nom" not-null="true"/>
+
+  </class>
+
+</hibernate-mapping>
