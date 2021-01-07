@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain
+﻿namespace Domain
 {
     class Editeur
     {
@@ -13,7 +7,7 @@ namespace Domain
         public Editeur() { }
         public Editeur(string nom)
         {
-            Nom = nom; 
+            Nom = nom;
         }
 
     }

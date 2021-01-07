@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Domain
 {
@@ -16,8 +12,8 @@ namespace Domain
         public virtual IList<Genre> Genres { get; set; }
         public virtual IList<Auteur> Auteurs { get; set; }
         public Editeur Editeur { get; set; }
-     
-        public Album() 
+
+        public Album()
         {
             Genres = new List<Genre>();
             Auteurs = new List<Auteur>();

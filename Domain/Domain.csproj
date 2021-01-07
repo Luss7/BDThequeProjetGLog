@@ -55,13 +55,13 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <EmbeddedResource Include="Mapping\Album.xml" />
-    <EmbeddedResource Include="Mapping\Auteur.xml" />
-    <EmbeddedResource Include="Mapping\Categorie.xml" />
-    <EmbeddedResource Include="Mapping\Editeur.xml" />
-    <EmbeddedResource Include="Mapping\Genre.xml" />
-    <EmbeddedResource Include="Mapping\Serie.xml" />
-    <EmbeddedResource Include="Mapping\Utilisateur.xml" />
+    <EmbeddedResource Include="Mapping\Album.hbm.xml" />
+    <EmbeddedResource Include="Mapping\Auteur.hbm.xml" />
+    <EmbeddedResource Include="Mapping\Categorie.hbm.xml" />
+    <EmbeddedResource Include="Mapping\Editeur.hbm.xml" />
+    <EmbeddedResource Include="Mapping\Genre.hbm.xml" />
+    <EmbeddedResource Include="Mapping\Serie.hbm.xml" />
+    <EmbeddedResource Include="Mapping\Utilisateur.hbm.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
