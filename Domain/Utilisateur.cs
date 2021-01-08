@@ -21,7 +21,7 @@ namespace Domain
             Mdp = mdp;
             EstAdmin = estAdmin;
         }
-        public void Acheter(Album album)
+        public virtual void Acheter(Album album)
         {
             Wishlist.Remove(album);
             Bibliotheque.Add(album);

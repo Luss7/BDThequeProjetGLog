@@ -19,6 +19,5 @@ namespace DAL
         {
             return Session.Query<Categorie>().ToList();
         }
-    {
     }
 }

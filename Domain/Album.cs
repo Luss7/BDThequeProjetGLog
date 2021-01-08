@@ -7,11 +7,11 @@ namespace Domain
         public virtual int Id { get; set; }
         public virtual string ImageCouv { get; set; } //image sous forme d'un nom de fichier, voir comment l'afficher et stocker dans un dossier à part
         public virtual string Titre { get; set; }
-        public Categorie Categorie { get; set; }
-        public Serie Serie { get; set; }
+        public virtual Categorie Categorie { get; set; }
+        public virtual Serie Serie { get; set; }
         public virtual IList<Genre> Genres { get; set; }
         public virtual IList<Auteur> Auteurs { get; set; }
-        public Editeur Editeur { get; set; }
+        public virtual Editeur Editeur { get; set; }
 
         public Album()
         {
