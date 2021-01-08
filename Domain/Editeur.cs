@@ -1,6 +1,6 @@
 ﻿namespace Domain
 {
-    class Editeur
+    public class Editeur
     {
         public virtual int Id { get; set; }
         public virtual string Nom { get; set; }

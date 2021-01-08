@@ -64,8 +64,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlbumRepository.cs" />
+    <Compile Include="AuteurRepository.cs" />
+    <Compile Include="CategorieRepository.cs" />
+    <Compile Include="EditeurRepository.cs" />
+    <Compile Include="GenreRepository.cs" />
+    <Compile Include="IAlbumRepository.cs" />
+    <Compile Include="IAuteurRepository.cs" />
+    <Compile Include="ICategorieRepository.cs" />
+    <Compile Include="IEditeurRepository.cs" />
+    <Compile Include="IGenreRepository.cs" />
+    <Compile Include="ISerieRepository.cs" />
+    <Compile Include="IUtilisateurRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository.cs" />
+    <Compile Include="SerieRepository.cs" />
+    <Compile Include="UtilisateurRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj">

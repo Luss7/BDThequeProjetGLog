@@ -1,6 +1,6 @@
 ﻿namespace Domain
 {
-    class Categorie
+    public class Categorie
     {
         public virtual int Id { get; set; }
         public virtual string Nom { get; set; }

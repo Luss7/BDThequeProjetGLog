@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{8
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DALTests", "DALTests\DALTests.csproj", "{3A87A544-5954-4DF0-94B2-FB0E1DF77907}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{AEEF7C21-D3CF-49C1-B015-B1880C31D074}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExportDB", "Test\ExportDB.csproj", "{AEEF7C21-D3CF-49C1-B015-B1880C31D074}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

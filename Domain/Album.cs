@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    class Album
+    public class Album
     {
         public virtual int Id { get; set; }
         public virtual string ImageCouv { get; set; } //image sous forme d'un nom de fichier, voir comment l'afficher et stocker dans un dossier à part

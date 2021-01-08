@@ -2,7 +2,7 @@
 
 namespace Domain
 {
-    class Utilisateur
+    public class Utilisateur
     {
         public virtual int Id { get; set; }
         public virtual string Login { get; set; }

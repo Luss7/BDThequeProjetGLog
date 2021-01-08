@@ -7,9 +7,12 @@ using Domain;
 
 namespace DAL
 {
-    public interface IAllAlbumsRepository
+    public interface IAlbumRepository
     {
         //Récupère la liste des albums
         IList<Album> GetAll();
+
+        //Sauvegarde un album
+        void Save(Album album);
     }
 }

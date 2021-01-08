@@ -1,6 +1,6 @@
 ﻿namespace Domain
 {
-    class Serie
+    public class Serie
     {
         public virtual int Id { get; set; }
         public virtual string Nom { get; set; }
