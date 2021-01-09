@@ -9,5 +9,10 @@
         {
             Nom = nom;
         }
+
+        public override string ToString()
+        {
+            return Nom;
+        }
     }
 }

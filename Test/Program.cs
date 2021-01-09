@@ -99,6 +99,7 @@ namespace Test
                 alb1.Genres.Add(fantastique);
                 alb1.Genres.Add(polarThriller);
                 alb1.Genres.Add(suspense);
+                Console.WriteLine(alb1.ToString());
 
                 Album alb2 = new Album("", "Gare aux gaffes", bd, dupuis, gaston);
                 alb2.Auteurs.Add(franquin);
@@ -239,11 +240,6 @@ namespace Test
                 session.Save(alb13);
                 session.Save(alb14);
                 session.Save(alb15);
-
-                session.Save(alb1);
-                session.Save(alb1);
-                session.Save(alb1);
-
             }
         }
     }

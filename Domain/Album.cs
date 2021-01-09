@@ -31,5 +31,16 @@ namespace Domain
             Categorie = categorie;
             Editeur = editeur;
         }
+
+        public override string ToString()
+        {
+            string txt = Titre + " " + Serie.ToString() + " " + Categorie.ToString() + " ";
+            foreach (Auteur auteur in Auteurs) txt += auteur.ToString() + " ";
+            txt += " ";
+            foreach (Genre genre in Genres) txt += genre.ToString()+ " ";
+            txt+= " " + Editeur.ToString();
+
+            return txt;
+        }
     }
 }

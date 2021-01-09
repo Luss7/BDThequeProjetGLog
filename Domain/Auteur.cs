@@ -11,6 +11,11 @@
             Prenom = prenom;
             Nom = nom;
         }
+
+        public override string ToString()
+        {
+            return Prenom + " " + Nom;
+        }
     }
 }
 
