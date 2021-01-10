@@ -32,6 +32,19 @@ namespace Domain
             Editeur = editeur;
         }
 
+        /// <summary>
+        /// Décrit un album sous forme d'un tableau
+        /// </summary>
+        /// <returns>Un tableau contenant les propriétés de l'utilisateur</returns>
+        public virtual string[] Decrire()
+        {
+            return new string[] { ImageCouv, Titre, Categorie.ToString(), Editeur.ToString() };
+        }
+
+        /// <summary>
+        /// Décrit un album sous forme textuelle
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             string txt = Titre + " " + Serie.ToString() + " " + Categorie.ToString() + " ";
