@@ -15,12 +15,12 @@ namespace Test
         {
             sessionFactory = new Configuration().Configure().BuildSessionFactory();
 
-            Console.WriteLine("Exporting DB schema... ");
+            Console.WriteLine("Export du schema BD... ");
             InitDB();
-            Console.WriteLine("Done! ");
+            Console.WriteLine("Fait! ");
             Console.WriteLine("Remplissage de la BD... ");
             FillDB();
-            Console.WriteLine("Fait!");
+            Console.WriteLine("Fait!\n\nAppuyez sur une touche pour fermer le programme");
             Console.ReadKey();
         }
         static void InitDB()
