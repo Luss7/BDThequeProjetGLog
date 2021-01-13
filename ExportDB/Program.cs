@@ -5,7 +5,7 @@ using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
 using System;
 
-namespace Test
+namespace ExportDB
 {
     public class Program
     {
@@ -71,10 +71,12 @@ namespace Test
 
                 AuteurRepository auteurRepository = new AuteurRepository();
                 Auteur ohba = new Auteur("Tsugumi", "Ohba");
+                Auteur obata = new Auteur("Takeshi", "Obata");
                 Auteur franquin = new Auteur("André", "Franquin");
+                Auteur jidehem = new Auteur("Jidéhem", "");
                 Auteur herge = new Auteur("Hergé", "");
                 Auteur strapi = new Auteur("Marjane", "Strapi");
-                Auteur gosciny = new Auteur("René", "Gosciny");
+                Auteur goscinny = new Auteur("René", "Goscinny");
                 Auteur gotlib = new Auteur("Gotlib", "");
                 Auteur moore = new Auteur("Alan", "Moore");
                 Auteur peyo = new Auteur("Peyo", "");
@@ -85,6 +87,7 @@ namespace Test
                 Auteur spiegelman = new Auteur("Art", "Spiegelman");
                 Auteur uderzo = new Auteur("Albert", "Uderzo");
                 Auteur watterson = new Auteur("Bill", "Watterson");
+                Auteur mcniven = new Auteur("Steve", "McNiven");
 
                 EditeurRepository editeurRepository = new EditeurRepository();
                 Editeur kana = new Editeur("Kana");
@@ -97,18 +100,20 @@ namespace Test
                 Editeur marvel = new Editeur("Marvel France");
                 Editeur flammarion = new Editeur("Flammarion");
                 Editeur lombard = new Editeur("Lombard");
-                Editeur warner = new Editeur("Warner Books");
+                Editeur horscollection = new Editeur("Hors Collection");
 
                 AlbumRepository albumRepository = new AlbumRepository();
                 Album alb1 = new Album("", "Death Note - Tome 1", manga, kana, deathNote);
                 alb1.Auteurs.Add(ohba);
+                alb1.Auteurs.Add(obata);
                 alb1.Genres.Add(drame);
                 alb1.Genres.Add(fantastique);
                 alb1.Genres.Add(polarThriller);
                 alb1.Genres.Add(suspense);
 
-                Album alb2 = new Album("", "Gare aux gaffes", bd, dupuis, gaston);
+                Album alb2 = new Album("", "Les archives de Lagaffe", bd, dupuis, gaston);
                 alb2.Auteurs.Add(franquin);
+                alb2.Auteurs.Add(jidehem);
                 alb2.Genres.Add(francoBelge);
                 alb2.Genres.Add(humour);
 
@@ -122,20 +127,19 @@ namespace Test
                 alb4.Genres.Add(biographie);
 
                 Album alb5 = new Album("", "Astérix le Gaulois - Astérix Tome 1 ", bd, hachette, asterix);
-                alb5.Auteurs.Add(gosciny);
+                alb5.Auteurs.Add(goscinny);
                 alb5.Genres.Add(humour);
 
                 Album alb6 = new Album("", "Rubrique-à-brac - Tome 1 ", bd, dargaud, rubriqueabrac);
                 alb6.Auteurs.Add(gotlib);
                 alb6.Genres.Add(humour);
 
-                Album alb7 = new Album("", "Le Comédien", comic, dc, watchmen);
+                Album alb7 = new Album("", "Watchmen - Vol 1", comic, dc, watchmen);
                 alb7.Auteurs.Add(moore);
                 alb7.Genres.Add(superHeros);
 
                 Album alb8 = new Album("", "Les Schtroumpfs Noirs ", bd, dupuis, schtroumpfs);
                 alb8.Auteurs.Add(peyo);
-                alb8.Auteurs.Add(delporte);
                 alb8.Genres.Add(aventure);
                 alb8.Genres.Add(jeunesse);
 
@@ -144,7 +148,7 @@ namespace Test
                 alb9.Genres.Add(humour);
 
                 Album alb10 = new Album("", "La guérison des Daltons", bd, dargaud, luckyLuke);
-                alb10.Auteurs.Add(gosciny);
+                alb10.Auteurs.Add(goscinny);
                 alb10.Auteurs.Add(morris);
                 alb10.Genres.Add(humour);
                 alb10.Genres.Add(belge);
@@ -154,16 +158,17 @@ namespace Test
                 alb11.Auteurs.Add(spiegelman);
                 alb11.Genres.Add(documentaireEncyclopedie);
 
-                Album alb12 = new Album("", "Astérix - 2 - La serpe d'or", bd, lombard, asterix);
-                alb12.Auteurs.Add(gosciny);
+                Album alb12 = new Album("", "Astérix - 2 - La serpe d'or", bd, dargaud, asterix);
+                alb12.Auteurs.Add(goscinny);
                 alb12.Auteurs.Add(uderzo);
                 alb12.Genres.Add(humour);
 
                 Album alb13 = new Album("", "Civil War - Tome 01 ", comic, marvel, civilWar);
                 alb13.Auteurs.Add(millar);
+                alb13.Auteurs.Add(mcniven);
                 alb13.Genres.Add(superHeros);
 
-                Album alb14 = new Album("", "Calvin et Hobbes", bd, warner, calvinHobbes);
+                Album alb14 = new Album("", "Calvin et Hobbes - Tome 1 - Adieu monde cruel !", bd, horscollection, calvinHobbes);
                 alb14.Auteurs.Add(watterson);
                 alb14.Genres.Add(humour);
 
@@ -208,13 +213,13 @@ namespace Test
                 editeurRepository.Save(marvel);
                 editeurRepository.Save(flammarion);
                 editeurRepository.Save(lombard);
-                editeurRepository.Save(warner);
+                editeurRepository.Save(horscollection);
 
                 auteurRepository.Save(ohba);
                 auteurRepository.Save(franquin);
                 auteurRepository.Save(herge);
                 auteurRepository.Save(strapi);
-                auteurRepository.Save(gosciny);
+                auteurRepository.Save(goscinny);
                 auteurRepository.Save(moore);
                 auteurRepository.Save(peyo);
                 auteurRepository.Save(delporte);
