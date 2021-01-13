@@ -1,8 +1,9 @@
-﻿using NHibernate;
+﻿using DAL;
+using Domain;
+using NHibernate;
 using NHibernate.Cfg;
 using NHibernate.Tool.hbm2ddl;
 using System;
-using Domain;
 
 namespace Test
 {
@@ -33,10 +34,12 @@ namespace Test
         {
             using (ISession session = sessionFactory.OpenSession())
             {
+                CategorieRepository categorieRepository = new CategorieRepository();
                 Categorie manga = new Categorie("Manga");
                 Categorie bd = new Categorie("BD");
                 Categorie comic = new Categorie("Comic");
 
+                GenreRepository genreRepository = new GenreRepository();
                 Genre drame = new Genre("Drame");
                 Genre fantastique = new Genre("Fantastique");
                 Genre humour = new Genre("Humour");
@@ -51,6 +54,7 @@ namespace Test
                 Genre documentaireEncyclopedie = new Genre("Documentaire/Encyclopédie");
                 Genre belge = new Genre("Belge");
 
+                SerieRepository serieRepository = new SerieRepository();
                 Serie deathNote = new Serie("Death Note");
                 Serie gaston = new Serie("Gaston");
                 Serie tintin = new Serie("Tintin");
@@ -65,6 +69,7 @@ namespace Test
                 Serie maus = new Serie("Maus");
                 Serie calvinHobbes = new Serie("Calvin et Hobbes");
 
+                AuteurRepository auteurRepository = new AuteurRepository();
                 Auteur ohba = new Auteur("Tsugumi", "Ohba");
                 Auteur franquin = new Auteur("André", "Franquin");
                 Auteur herge = new Auteur("Hergé", "");
@@ -81,25 +86,26 @@ namespace Test
                 Auteur uderzo = new Auteur("Albert", "Uderzo");
                 Auteur watterson = new Auteur("Bill", "Watterson");
 
+                EditeurRepository editeurRepository = new EditeurRepository();
                 Editeur kana = new Editeur("Kana");
                 Editeur dupuis = new Editeur("Dupuis");
                 Editeur casterman = new Editeur("Casterman");
-                Editeur lassociation = new Editeur("L'association"); 
-                Editeur hachette = new Editeur("Hacette Livre"); 
-                Editeur dargaud = new Editeur("Dargaud"); 
-                Editeur dc = new Editeur("DC Comics"); 
-                Editeur marvel = new Editeur("Marvel France"); 
-                Editeur flammarion = new Editeur("Flammarion"); 
-                Editeur lombard = new Editeur("Lombard"); 
+                Editeur lassociation = new Editeur("L'association");
+                Editeur hachette = new Editeur("Hacette Livre");
+                Editeur dargaud = new Editeur("Dargaud");
+                Editeur dc = new Editeur("DC Comics");
+                Editeur marvel = new Editeur("Marvel France");
+                Editeur flammarion = new Editeur("Flammarion");
+                Editeur lombard = new Editeur("Lombard");
                 Editeur warner = new Editeur("Warner Books");
 
+                AlbumRepository albumRepository = new AlbumRepository();
                 Album alb1 = new Album("", "Death Note - Tome 1", manga, kana, deathNote);
                 alb1.Auteurs.Add(ohba);
                 alb1.Genres.Add(drame);
                 alb1.Genres.Add(fantastique);
                 alb1.Genres.Add(polarThriller);
                 alb1.Genres.Add(suspense);
-                Console.WriteLine(alb1.ToString());
 
                 Album alb2 = new Album("", "Gare aux gaffes", bd, dupuis, gaston);
                 alb2.Auteurs.Add(franquin);
@@ -133,7 +139,7 @@ namespace Test
                 alb8.Genres.Add(aventure);
                 alb8.Genres.Add(jeunesse);
 
-                 Album alb9 = new Album("", "Le Chat - Tome 1", bd, casterman, lechat);
+                Album alb9 = new Album("", "Le Chat - Tome 1", bd, casterman, lechat);
                 alb9.Auteurs.Add(geluck);
                 alb9.Genres.Add(humour);
 
@@ -166,82 +172,92 @@ namespace Test
                 alb15.Genres.Add(aventure);
                 alb15.Genres.Add(francoBelge);
 
-                session.Save(manga);
-                session.Save(bd);
-                session.Save(comic);
+                UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
+                Utilisateur user1 = new Utilisateur("user1", "mdp", false);
+                user1.Bibliotheque.Add(alb1);
+                user1.Bibliotheque.Add(alb2);
 
-                session.Save(drame);
-                session.Save(fantastique);
-                session.Save(polarThriller);
-                session.Save(suspense);
-                session.Save(francoBelge);
-                session.Save(humour);
-                session.Save(superHeros);
-                session.Save(biographie);
-                session.Save(aventure);
-                session.Save(jeunesse);
-                session.Save(belge);
-                session.Save(western);
-                session.Save(documentaireEncyclopedie);
+                user1.Wishlist.Add(alb3);
+                user1.Wishlist.Add(alb4);
 
-                session.Save(kana);
-                session.Save(dupuis);
-                session.Save(casterman);
-                session.Save(lassociation);
-                session.Save(hachette);
-                session.Save(dargaud);
-                session.Save(dc);
-                session.Save(marvel);
-                session.Save(flammarion);
-                session.Save(lombard);
-                session.Save(warner);
+                categorieRepository.Save(manga);
+                categorieRepository.Save(bd);
+                categorieRepository.Save(comic);
 
-                session.Save(ohba);
-                session.Save(franquin);
-                session.Save(herge);
-                session.Save(strapi);
-                session.Save(gosciny);
-                session.Save(moore);
-                session.Save(peyo);
-                session.Save(delporte);
-                session.Save(geluck);
-                session.Save(morris);
-                session.Save(millar);
-                session.Save(spiegelman);
-                session.Save(uderzo);
-                session.Save(watterson);
+                genreRepository.Save(drame);
+                genreRepository.Save(fantastique);
+                genreRepository.Save(polarThriller);
+                genreRepository.Save(suspense);
+                genreRepository.Save(francoBelge);
+                genreRepository.Save(humour);
+                genreRepository.Save(superHeros);
+                genreRepository.Save(biographie);
+                genreRepository.Save(aventure);
+                genreRepository.Save(jeunesse);
+                genreRepository.Save(belge);
+                genreRepository.Save(western);
+                genreRepository.Save(documentaireEncyclopedie);
 
-                session.Save(deathNote);
-                session.Save(gaston);
-                session.Save(tintin);
-                session.Save(persepolis);
-                session.Save(asterix);
-                session.Save(rubriqueabrac);
-                session.Save(watchmen);
-                session.Save(schtroumpfs);
-                session.Save(lechat);
-                session.Save(luckyLuke);
-                session.Save(civilWar);
-                session.Save(maus);
-                session.Save(calvinHobbes);
+                editeurRepository.Save(kana);
+                editeurRepository.Save(dupuis);
+                editeurRepository.Save(casterman);
+                editeurRepository.Save(lassociation);
+                editeurRepository.Save(hachette);
+                editeurRepository.Save(dargaud);
+                editeurRepository.Save(dc);
+                editeurRepository.Save(marvel);
+                editeurRepository.Save(flammarion);
+                editeurRepository.Save(lombard);
+                editeurRepository.Save(warner);
 
-                session.Save(alb1);
-                session.Save(alb2);
-                session.Save(alb3);
-                session.Save(alb4);
-                session.Save(alb5);
-                session.Save(alb6);
-                session.Save(alb7);
-                session.Save(alb8);
-                session.Save(alb9);
-                session.Save(alb10);
-                session.Save(alb11);
-                session.Save(alb12);
-                session.Save(alb13);
-                session.Save(alb14);
-                session.Save(alb15);
+                auteurRepository.Save(ohba);
+                auteurRepository.Save(franquin);
+                auteurRepository.Save(herge);
+                auteurRepository.Save(strapi);
+                auteurRepository.Save(gosciny);
+                auteurRepository.Save(moore);
+                auteurRepository.Save(peyo);
+                auteurRepository.Save(delporte);
+                auteurRepository.Save(geluck);
+                auteurRepository.Save(morris);
+                auteurRepository.Save(millar);
+                auteurRepository.Save(spiegelman);
+                auteurRepository.Save(uderzo);
+                auteurRepository.Save(watterson);
+
+                serieRepository.Save(deathNote);
+                serieRepository.Save(gaston);
+                serieRepository.Save(tintin);
+                serieRepository.Save(persepolis);
+                serieRepository.Save(asterix);
+                serieRepository.Save(rubriqueabrac);
+                serieRepository.Save(watchmen);
+                serieRepository.Save(schtroumpfs);
+                serieRepository.Save(lechat);
+                serieRepository.Save(luckyLuke);
+                serieRepository.Save(civilWar);
+                serieRepository.Save(maus);
+                serieRepository.Save(calvinHobbes);
+
+                albumRepository.Save(alb1);
+                albumRepository.Save(alb2);
+                albumRepository.Save(alb3);
+                albumRepository.Save(alb4);
+                albumRepository.Save(alb5);
+                albumRepository.Save(alb6);
+                albumRepository.Save(alb7);
+                albumRepository.Save(alb8);
+                albumRepository.Save(alb9);
+                albumRepository.Save(alb10);
+                albumRepository.Save(alb11);
+                albumRepository.Save(alb12);
+                albumRepository.Save(alb13);
+                albumRepository.Save(alb14);
+                albumRepository.Save(alb15);
+
+                utilisateurRepository.Save(user1);
             }
         }
     }
-        
+
 }

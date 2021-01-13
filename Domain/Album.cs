@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 
+
 namespace Domain
 {
     public class Album
@@ -13,19 +14,17 @@ namespace Domain
         public virtual IList<Auteur> Auteurs { get; set; }
         public virtual Editeur Editeur { get; set; }
 
-        public Album()
-        {
-            Genres = new List<Genre>();
-            Auteurs = new List<Auteur>();
-        }
+        public Album() { }
 
         public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur, Serie serie)
             : this(imagecouv, titre, categorie, editeur)
         {
             Serie = serie;
         }
-        public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur) : this()
+        public Album(string imagecouv, string titre, Categorie categorie, Editeur editeur)
         {
+            Genres = new List<Genre>();
+            Auteurs = new List<Auteur>();
             ImageCouv = imagecouv;
             Titre = titre;
             Categorie = categorie;
@@ -50,8 +49,8 @@ namespace Domain
             string txt = Titre + " " + Serie.ToString() + " " + Categorie.ToString() + " ";
             foreach (Auteur auteur in Auteurs) txt += auteur.ToString() + " ";
             txt += " ";
-            foreach (Genre genre in Genres) txt += genre.ToString()+ " ";
-            txt+= " " + Editeur.ToString();
+            foreach (Genre genre in Genres) txt += genre.ToString() + " ";
+            txt += " " + Editeur.ToString();
 
             return txt;
         }

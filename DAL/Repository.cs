@@ -5,6 +5,7 @@ namespace DAL
 {
     /// <summary>
     /// Superclasse de tous les repository
+    /// Donne accès aux objets NHibernate nécessaires pour interagir avec la BD
     /// </summary>
     public abstract class Repository
     {

@@ -10,13 +10,11 @@ namespace Domain
         public virtual bool EstAdmin { get; set; }
         public virtual IList<Album> Bibliotheque { get; set; }
         public virtual IList<Album> Wishlist { get; set; }
-        public Utilisateur()
+        public Utilisateur() { }
+        public Utilisateur(string login, string mdp, bool estAdmin)
         {
             Bibliotheque = new List<Album>();
             Wishlist = new List<Album>();
-        }
-        public Utilisateur(string login, string mdp, bool estAdmin) : this()
-        {
             Login = login;
             Mdp = mdp;
             EstAdmin = estAdmin;

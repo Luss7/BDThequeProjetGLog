@@ -13,11 +13,11 @@
     <many-to-one name="Categorie" class="Categorie" column="album_categorie"/>
     <many-to-one name="Serie" class="Serie" column="album_serie"/>
     <many-to-one name="Editeur" class="Editeur" column="album_editeur"/>
-    <bag name="Genres" table ="album_genres" lazy ="true">
+    <bag name="Genres" table ="album_genres" cascade = "all-delete-orphan" lazy ="true">
       <key column="album_id"/>
       <many-to-many class ="Genre" column="genre_id"/>
     </bag>
-    <bag name="Auteurs" table ="album_auteurs" lazy ="true">
+    <bag name="Auteurs" table ="album_auteurs" cascade = "all-delete-orphan" lazy ="true">
       <key column="album_id"/>
       <many-to-many class ="Auteur" column="auteur_id"/>
     </bag>

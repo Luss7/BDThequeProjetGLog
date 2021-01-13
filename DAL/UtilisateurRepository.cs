@@ -1,9 +1,6 @@
-﻿using System;
+﻿using Domain;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain;
 
 namespace DAL
 {
@@ -15,7 +12,7 @@ namespace DAL
             Session.Flush();
         }
 
-        public IList<Utilisateur> GetAll()
+        public List<Utilisateur> GetAll()
         {
             return Session.Query<Utilisateur>().ToList();
         }

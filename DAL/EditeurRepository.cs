@@ -1,13 +1,10 @@
-﻿using System;
+﻿using Domain;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Domain;
 
 namespace DAL
 {
-    public class EditeurRepository: Repository, IEditeurRepository
+    public class EditeurRepository : Repository, IEditeurRepository
     {
         public void Save(Editeur editeur)
         {
@@ -15,7 +12,7 @@ namespace DAL
             Session.Flush();
         }
 
-        public IList<Editeur> GetAll()
+        public List<Editeur> GetAll()
         {
             return Session.Query<Editeur>().ToList();
         }

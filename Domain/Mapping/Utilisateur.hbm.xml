@@ -11,11 +11,11 @@
     <property name="Login" column="user_login" not-null="true"/>
     <property name="Mdp" column="user_mdp" not-null="true"/>
     <property name="EstAdmin" column="user_estAdmin" not-null="true"/>
-    <bag name="Bibliotheque" table ="user_bibliotheque" lazy ="true">
+    <bag name="Bibliotheque" table ="user_bibliotheque" cascade = "all-delete-orphan" lazy ="true">
       <key column="user_id"/>
       <many-to-many class ="Album" column="album_id"/>
     </bag>
-    <bag name="Wishlist" table ="user_wishlist" lazy ="true">
+    <bag name="Wishlist" table ="user_wishlist" cascade = "all-delete-orphan" lazy ="true">
       <key column="user_id"/>
       <many-to-many class ="Album" column="album_id"/>
     </bag>
