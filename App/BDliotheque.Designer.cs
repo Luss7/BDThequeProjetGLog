@@ -301,7 +301,7 @@ namespace App
             this.tabMenu.HotTrack = true;
             this.tabMenu.Location = new System.Drawing.Point(0, 89);
             this.tabMenu.Name = "tabMenu";
-            this.tabMenu.Padding = new System.Drawing.Point(32, 5);
+            this.tabMenu.Padding = new System.Drawing.Point(61, 5);
             this.tabMenu.SelectedIndex = 0;
             this.tabMenu.Size = new System.Drawing.Size(1099, 483);
             this.tabMenu.TabIndex = 0;
@@ -347,6 +347,7 @@ namespace App
             this.lab_nom_utilisateur.Size = new System.Drawing.Size(66, 26);
             this.lab_nom_utilisateur.TabIndex = 10;
             this.lab_nom_utilisateur.Text = "user1";
+            this.lab_nom_utilisateur.Click += new System.EventHandler(this.lab_nom_utilisateur_Click);
             // 
             // lab_utilisateur
             // 
