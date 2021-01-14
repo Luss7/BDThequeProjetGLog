@@ -68,6 +68,12 @@
     <Compile Include="AllAlbums.Designer.cs">
       <DependentUpon>AllAlbums.cs</DependentUpon>
     </Compile>
+    <Compile Include="BDliotheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BDliotheque.Designer.cs">
+      <DependentUpon>BDliotheque.cs</DependentUpon>
+    </Compile>
     <Compile Include="Connexion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AllAlbums.resx">
       <DependentUpon>AllAlbums.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BDliotheque.resx">
+      <DependentUpon>BDliotheque.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Connexion.resx">
       <DependentUpon>Connexion.cs</DependentUpon>

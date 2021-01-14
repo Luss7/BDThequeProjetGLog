@@ -35,10 +35,10 @@ namespace App
             this.serieRepository = serieRepository;
             this.utilisateurRepository = utilisateurRepository;
 
-            AfficherContenu();
+           // AfficherContenu();
         }
 
-        private void AfficherContenu()
+    /*   private void AfficherContenu()
         {
             try
             {
@@ -93,7 +93,7 @@ namespace App
             {
                 MessageBox.Show(e.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+        }*/
 
         private void btn_MyAlbums_Click(object sender, EventArgs e)
         {
