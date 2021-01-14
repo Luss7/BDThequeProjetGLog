@@ -98,6 +98,21 @@
     <Content Include="hibernate.cfg.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\asterix-la-serpe-dor.jpg" />
+    <Content Include="Images\asterix-le-gaulois.jpg" />
+    <Content Include="Images\calvin-hobbes.jpg" />
+    <Content Include="Images\civil-war.jpg" />
+    <Content Include="Images\death-note-t1.jpg" />
+    <Content Include="Images\la-guerison-des-daltons.jpg" />
+    <Content Include="Images\le-chat.jpg" />
+    <Content Include="Images\les-archives-de-lagaffe.jpg" />
+    <Content Include="Images\maus-t1.jpg" />
+    <Content Include="Images\persepolis.jpg" />
+    <Content Include="Images\rubrique-a-brac.jpg" />
+    <Content Include="Images\schtroumpfs-noirs.jpg" />
+    <Content Include="Images\tintin-au-pays-soviets.jpg" />
+    <Content Include="Images\tintin-au-tibet.jpg" />
+    <Content Include="Images\watchmen-1.jpg" />
     <Content Include="MySql.Data.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

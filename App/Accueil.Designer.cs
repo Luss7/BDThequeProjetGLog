@@ -47,9 +47,10 @@
             this.lab_Accueil.AutoSize = true;
             this.lab_Accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_Accueil.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_Accueil.Location = new System.Drawing.Point(349, 114);
+            this.lab_Accueil.Location = new System.Drawing.Point(465, 140);
+            this.lab_Accueil.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_Accueil.Name = "lab_Accueil";
-            this.lab_Accueil.Size = new System.Drawing.Size(109, 31);
+            this.lab_Accueil.Size = new System.Drawing.Size(135, 39);
             this.lab_Accueil.TabIndex = 3;
             this.lab_Accueil.Text = "Accueil";
             // 
@@ -58,9 +59,10 @@
             this.Tb_Titre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.Tb_Titre.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tb_Titre.ForeColor = System.Drawing.SystemColors.Info;
-            this.Tb_Titre.Location = new System.Drawing.Point(0, 9);
+            this.Tb_Titre.Location = new System.Drawing.Point(0, 11);
+            this.Tb_Titre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tb_Titre.Name = "Tb_Titre";
-            this.Tb_Titre.Size = new System.Drawing.Size(799, 44);
+            this.Tb_Titre.Size = new System.Drawing.Size(1064, 53);
             this.Tb_Titre.TabIndex = 2;
             this.Tb_Titre.Text = "BD\'LIOTHEQUE";
             this.Tb_Titre.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -73,9 +75,10 @@
             this.flowLayoutPanel_Menu.Controls.Add(this.btn_MyAlbums);
             this.flowLayoutPanel_Menu.Controls.Add(this.btn_Wishlist);
             this.flowLayoutPanel_Menu.Controls.Add(this.link_Deconnexion);
-            this.flowLayoutPanel_Menu.Location = new System.Drawing.Point(0, 51);
+            this.flowLayoutPanel_Menu.Location = new System.Drawing.Point(0, 63);
+            this.flowLayoutPanel_Menu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flowLayoutPanel_Menu.Name = "flowLayoutPanel_Menu";
-            this.flowLayoutPanel_Menu.Size = new System.Drawing.Size(799, 43);
+            this.flowLayoutPanel_Menu.Size = new System.Drawing.Size(1065, 53);
             this.flowLayoutPanel_Menu.TabIndex = 5;
             // 
             // btn_Accueil
@@ -83,9 +86,10 @@
             this.btn_Accueil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Accueil.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Accueil.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Accueil.Location = new System.Drawing.Point(3, 3);
+            this.btn_Accueil.Location = new System.Drawing.Point(4, 4);
+            this.btn_Accueil.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Accueil.Name = "btn_Accueil";
-            this.btn_Accueil.Size = new System.Drawing.Size(112, 37);
+            this.btn_Accueil.Size = new System.Drawing.Size(149, 46);
             this.btn_Accueil.TabIndex = 6;
             this.btn_Accueil.Text = "Accueil";
             this.btn_Accueil.UseVisualStyleBackColor = false;
@@ -96,9 +100,10 @@
             this.btn_AllAlbums.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_AllAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_AllAlbums.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_AllAlbums.Location = new System.Drawing.Point(121, 3);
+            this.btn_AllAlbums.Location = new System.Drawing.Point(161, 4);
+            this.btn_AllAlbums.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_AllAlbums.Name = "btn_AllAlbums";
-            this.btn_AllAlbums.Size = new System.Drawing.Size(195, 37);
+            this.btn_AllAlbums.Size = new System.Drawing.Size(260, 46);
             this.btn_AllAlbums.TabIndex = 7;
             this.btn_AllAlbums.Text = "Tous les albums";
             this.btn_AllAlbums.UseVisualStyleBackColor = false;
@@ -109,9 +114,10 @@
             this.btn_MyAlbums.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_MyAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MyAlbums.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_MyAlbums.Location = new System.Drawing.Point(322, 3);
+            this.btn_MyAlbums.Location = new System.Drawing.Point(429, 4);
+            this.btn_MyAlbums.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_MyAlbums.Name = "btn_MyAlbums";
-            this.btn_MyAlbums.Size = new System.Drawing.Size(156, 37);
+            this.btn_MyAlbums.Size = new System.Drawing.Size(208, 46);
             this.btn_MyAlbums.TabIndex = 8;
             this.btn_MyAlbums.Text = "Mes albums";
             this.btn_MyAlbums.UseVisualStyleBackColor = false;
@@ -122,9 +128,10 @@
             this.btn_Wishlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_Wishlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Wishlist.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Wishlist.Location = new System.Drawing.Point(484, 3);
+            this.btn_Wishlist.Location = new System.Drawing.Point(645, 4);
+            this.btn_Wishlist.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Wishlist.Name = "btn_Wishlist";
-            this.btn_Wishlist.Size = new System.Drawing.Size(156, 37);
+            this.btn_Wishlist.Size = new System.Drawing.Size(208, 46);
             this.btn_Wishlist.TabIndex = 9;
             this.btn_Wishlist.Text = "Ma wihslist";
             this.btn_Wishlist.UseVisualStyleBackColor = false;
@@ -136,9 +143,10 @@
             this.link_Deconnexion.AutoSize = true;
             this.link_Deconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_Deconnexion.LinkColor = System.Drawing.Color.White;
-            this.link_Deconnexion.Location = new System.Drawing.Point(646, 0);
+            this.link_Deconnexion.Location = new System.Drawing.Point(861, 0);
+            this.link_Deconnexion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.link_Deconnexion.Name = "link_Deconnexion";
-            this.link_Deconnexion.Size = new System.Drawing.Size(139, 26);
+            this.link_Deconnexion.Size = new System.Drawing.Size(172, 31);
             this.link_Deconnexion.TabIndex = 6;
             this.link_Deconnexion.TabStop = true;
             this.link_Deconnexion.Text = "Déconnexion";
@@ -150,9 +158,10 @@
             this.lab_ADecouvrir.AutoSize = true;
             this.lab_ADecouvrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_ADecouvrir.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_ADecouvrir.Location = new System.Drawing.Point(13, 162);
+            this.lab_ADecouvrir.Location = new System.Drawing.Point(17, 199);
+            this.lab_ADecouvrir.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_ADecouvrir.Name = "lab_ADecouvrir";
-            this.lab_ADecouvrir.Size = new System.Drawing.Size(122, 25);
+            this.lab_ADecouvrir.Size = new System.Drawing.Size(152, 29);
             this.lab_ADecouvrir.TabIndex = 6;
             this.lab_ADecouvrir.Text = "A découvrir";
             // 
@@ -161,9 +170,10 @@
             this.lab_MyAlbums.AutoSize = true;
             this.lab_MyAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_MyAlbums.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_MyAlbums.Location = new System.Drawing.Point(12, 286);
+            this.lab_MyAlbums.Location = new System.Drawing.Point(16, 352);
+            this.lab_MyAlbums.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_MyAlbums.Name = "lab_MyAlbums";
-            this.lab_MyAlbums.Size = new System.Drawing.Size(128, 25);
+            this.lab_MyAlbums.Size = new System.Drawing.Size(161, 29);
             this.lab_MyAlbums.TabIndex = 7;
             this.lab_MyAlbums.Text = "Mes albums";
             // 
@@ -172,23 +182,25 @@
             this.lab_Wishlist.AutoSize = true;
             this.lab_Wishlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_Wishlist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_Wishlist.Location = new System.Drawing.Point(13, 391);
+            this.lab_Wishlist.Location = new System.Drawing.Point(17, 481);
+            this.lab_Wishlist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_Wishlist.Name = "lab_Wishlist";
-            this.lab_Wishlist.Size = new System.Drawing.Size(118, 25);
+            this.lab_Wishlist.Size = new System.Drawing.Size(149, 29);
             this.lab_Wishlist.TabIndex = 8;
             this.lab_Wishlist.Text = "Ma wishlist";
             // 
             // Accueil
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.lab_Wishlist);
             this.Controls.Add(this.lab_MyAlbums);
             this.Controls.Add(this.lab_ADecouvrir);
             this.Controls.Add(this.flowLayoutPanel_Menu);
             this.Controls.Add(this.lab_Accueil);
             this.Controls.Add(this.Tb_Titre);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Accueil";
             this.Text = "Accueil";
             this.flowLayoutPanel_Menu.ResumeLayout(false);
