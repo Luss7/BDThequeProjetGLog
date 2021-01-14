@@ -1,4 +1,6 @@
-﻿using System.Windows.Forms;
+﻿using DAL;
+using Domain;
+using System.Windows.Forms;
 
 namespace App
 {
@@ -9,7 +11,12 @@ namespace App
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Application.Run(new Accueil());
+            IUtilisateurRepository utilisateurRepository = new UtilisateurRepository();
+            IAlbumRepository albumRepository = new AlbumRepository();
+            //Application.Run(new Accueil());
+            //Application.Run(new BDliotheque());
+
+            Application.Run(new BDliotheque(utilisateurRepository,albumRepository));
         }
     }
 }

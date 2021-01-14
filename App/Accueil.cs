@@ -122,7 +122,6 @@ namespace App
 
         private void link_Deconnexion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-
         }
     }
 }

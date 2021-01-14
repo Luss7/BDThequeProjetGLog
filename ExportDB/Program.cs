@@ -21,6 +21,7 @@ namespace ExportDB
             Console.WriteLine("Remplissage de la BD... ");
             FillDB();
             Console.WriteLine("Fait!\n\nAppuyez sur une touche pour fermer le programme");
+            Console.WriteLine("Test affichage image\n");
             Console.ReadKey();
         }
         static void InitDB()
@@ -103,7 +104,7 @@ namespace ExportDB
                 Editeur horscollection = new Editeur("Hors Collection");
 
                 AlbumRepository albumRepository = new AlbumRepository();
-                Album alb1 = new Album("", "Death Note - Tome 1", manga, kana, deathNote);
+                Album alb1 = new Album("death-note-t1.jpg", "Death Note - Tome 1", manga, kana, deathNote);
                 alb1.Auteurs.Add(ohba);
                 alb1.Auteurs.Add(obata);
                 alb1.Genres.Add(drame);
@@ -111,79 +112,79 @@ namespace ExportDB
                 alb1.Genres.Add(polarThriller);
                 alb1.Genres.Add(suspense);
 
-                Album alb2 = new Album("", "Les archives de Lagaffe", bd, dupuis, gaston);
+                Album alb2 = new Album("les-archives-de-lagaffe.jpg", "Les archives de Lagaffe", bd, dupuis, gaston);
                 alb2.Auteurs.Add(franquin);
                 alb2.Auteurs.Add(jidehem);
                 alb2.Genres.Add(francoBelge);
                 alb2.Genres.Add(humour);
 
-                Album alb3 = new Album("", "Tintin au Tibet", bd, casterman, tintin);
+                Album alb3 = new Album("tintin-au-tibet.jpg", "Tintin au Tibet", bd, casterman, tintin);
                 alb3.Auteurs.Add(herge);
                 alb3.Genres.Add(francoBelge);
                 alb3.Genres.Add(humour);
 
-                Album alb4 = new Album("", "Persepolis - Tome 1", bd, lassociation, persepolis);
+                Album alb4 = new Album("persepolis.jpg", "Persepolis - Tome 1", bd, lassociation, persepolis);
                 alb4.Auteurs.Add(strapi);
                 alb4.Genres.Add(biographie);
 
-                Album alb5 = new Album("", "Astérix le Gaulois - Astérix Tome 1 ", bd, hachette, asterix);
+                Album alb5 = new Album("asterix-le-gaulois.jpg", "Astérix le Gaulois - Astérix Tome 1 ", bd, hachette, asterix);
                 alb5.Auteurs.Add(goscinny);
                 alb5.Genres.Add(humour);
 
-                Album alb6 = new Album("", "Rubrique-à-brac - Tome 1 ", bd, dargaud, rubriqueabrac);
+                Album alb6 = new Album("rubrique-a-brac.jpg", "Rubrique-à-brac - Tome 1 ", bd, dargaud, rubriqueabrac);
                 alb6.Auteurs.Add(gotlib);
                 alb6.Genres.Add(humour);
 
-                Album alb7 = new Album("", "Watchmen - Vol 1", comic, dc, watchmen);
+                Album alb7 = new Album("watchmen-1.jpg", "Watchmen - Vol 1", comic, dc, watchmen);
                 alb7.Auteurs.Add(moore);
                 alb7.Genres.Add(superHeros);
 
-                Album alb8 = new Album("", "Les Schtroumpfs Noirs ", bd, dupuis, schtroumpfs);
+                Album alb8 = new Album("schtroumpfs-noirs.jpg", "Les Schtroumpfs Noirs ", bd, dupuis, schtroumpfs);
                 alb8.Auteurs.Add(peyo);
                 alb8.Genres.Add(aventure);
                 alb8.Genres.Add(jeunesse);
 
-                Album alb9 = new Album("", "Le Chat - Tome 1", bd, casterman, lechat);
+                Album alb9 = new Album("le-chat.jpg", "Le Chat - Tome 1", bd, casterman, lechat);
                 alb9.Auteurs.Add(geluck);
                 alb9.Genres.Add(humour);
 
-                Album alb10 = new Album("", "La guérison des Daltons", bd, dargaud, luckyLuke);
+                Album alb10 = new Album("la-guerison-des-daltons.jpg", "La guérison des Daltons", bd, dargaud, luckyLuke);
                 alb10.Auteurs.Add(goscinny);
                 alb10.Auteurs.Add(morris);
                 alb10.Genres.Add(humour);
                 alb10.Genres.Add(belge);
                 alb10.Genres.Add(western);
 
-                Album alb11 = new Album("", "Maus - Tome 1 : Un survivant raconte ", bd, flammarion, maus);
+                Album alb11 = new Album("maus-t1.jpg", "Maus - Tome 1 : Un survivant raconte ", bd, flammarion, maus);
                 alb11.Auteurs.Add(spiegelman);
                 alb11.Genres.Add(documentaireEncyclopedie);
 
-                Album alb12 = new Album("", "Astérix - 2 - La serpe d'or", bd, dargaud, asterix);
+                Album alb12 = new Album("asterix-le-gaulois.jpg", "Astérix - 2 - La serpe d'or", bd, dargaud, asterix);
                 alb12.Auteurs.Add(goscinny);
                 alb12.Auteurs.Add(uderzo);
                 alb12.Genres.Add(humour);
 
-                Album alb13 = new Album("", "Civil War - Tome 01 ", comic, marvel, civilWar);
+                Album alb13 = new Album("civil-war.jpg", "Civil War - Tome 01 ", comic, marvel, civilWar);
                 alb13.Auteurs.Add(millar);
                 alb13.Auteurs.Add(mcniven);
                 alb13.Genres.Add(superHeros);
 
-                Album alb14 = new Album("", "Calvin et Hobbes - Tome 1 - Adieu monde cruel !", bd, horscollection, calvinHobbes);
+                Album alb14 = new Album("calvin-hobbes.jpg", "Calvin et Hobbes - Tome 1 - Adieu monde cruel !", bd, horscollection, calvinHobbes);
                 alb14.Auteurs.Add(watterson);
                 alb14.Genres.Add(humour);
 
-                Album alb15 = new Album("", "Tintin au pays des Soviets", bd, casterman, tintin);
+                Album alb15 = new Album("tintin-au-pays-soviets.jpg", "Tintin au pays des Soviets", bd, casterman, tintin);
                 alb15.Auteurs.Add(herge);
                 alb15.Genres.Add(aventure);
                 alb15.Genres.Add(francoBelge);
 
                 UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
-                Utilisateur user1 = new Utilisateur("user1", "mdp", false);
-                user1.Bibliotheque.Add(alb1);
-                user1.Bibliotheque.Add(alb2);
+                Utilisateur bpesquet = new Utilisateur("bpesquet", "jaimelegenielog");
+                bpesquet.Bibliotheque.Add(alb1);
+                bpesquet.Bibliotheque.Add(alb2);
 
-                user1.Wishlist.Add(alb3);
-                user1.Wishlist.Add(alb4);
+                bpesquet.Wishlist.Add(alb3);
+                bpesquet.Wishlist.Add(alb4);
 
                 categorieRepository.Save(manga);
                 categorieRepository.Save(bd);
@@ -260,7 +261,7 @@ namespace ExportDB
                 albumRepository.Save(alb14);
                 albumRepository.Save(alb15);
 
-                utilisateurRepository.Save(user1);
+                utilisateurRepository.Save(bpesquet);
             }
         }
     }
