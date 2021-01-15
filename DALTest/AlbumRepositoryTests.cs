@@ -25,12 +25,15 @@ namespace DAL.Tests
         public void TestLivreRepo_GetAll()
         {
             var albums = albumRepository.GetAll();
-            // 5 album dans le jeu de données de test
+            // 5 albums dans le jeu de données de test
             Assert.AreEqual(5, albums.Count);
             var actual = albums.Select(genre => genre.Titre).ToList();
             var expected = new List<string> { "Death Note - Tome 1", "Les archives de Lagaffe",
                 "Tintin au Tibet", "Persepolis - Tome 1","Astérix le Gaulois - Astérix Tome 1" };
             CollectionAssert.AreEquivalent(actual, expected);
         }
+
+        [TestMethod]
+
     }
 }

@@ -32,15 +32,6 @@ namespace DAL
         }
         public IList<Album> GetAlbumsMot(string mot)
         {
-            
- //           var queryTitre = Session.QueryOver<Album>().Where(x => Regex.Match(x.Titre,@".+mot+.").Success).List();
-            /*var likestr = string.Format("%{0}%", mot);*/
-            /*            string input = "someString";
-                        string[] toSearchFor = GetSearchStrings();
-                        var containsAll = toSearchFor.All(x => input.Contains(x));*/
-            /*            string myString = "$randomText$";
-                        var match = Regex.Match(myString, @"\$.+\$");*/
-            //query = query.Where(x => x.adArea.Contains(";" + iArea.ToString() + ";"));
             IList<Album> qTitre = Session.Query<Album>().Where(x => x.Titre.IndexOf(mot) >= 0).ToList();
             IList<Album> qSerie = Session.Query<Album>().Where(x => x.Serie.Nom.IndexOf(mot) >= 0).ToList();
             var qAuteurPrenom = Session.QueryOver<Album>().JoinQueryOver<Auteur>(x => x.Auteurs).Where(a => a.Prenom==mot).List();
