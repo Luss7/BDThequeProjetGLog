@@ -21,7 +21,6 @@ namespace ExportDB
             Console.WriteLine("Remplissage de la BD... ");
             FillDB();
             Console.WriteLine("Fait!\n\nAppuyez sur une touche pour fermer le programme");
-            Console.WriteLine("Test affichage image\n");
             Console.ReadKey();
         }
         static void InitDB()

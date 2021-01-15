@@ -146,6 +146,7 @@ namespace App
             this.btn_ajoutMesAlbums.TabIndex = 10;
             this.btn_ajoutMesAlbums.Text = "Ajouter à Mes albums";
             this.btn_ajoutMesAlbums.UseVisualStyleBackColor = false;
+            this.btn_ajoutMesAlbums.Click += new System.EventHandler(this.btn_ajoutMesAlbums_Click);
             // 
             // btn_ajoutWishlist
             // 
@@ -158,6 +159,7 @@ namespace App
             this.btn_ajoutWishlist.TabIndex = 11;
             this.btn_ajoutWishlist.Text = "Ajouter à ma Wishlist";
             this.btn_ajoutWishlist.UseVisualStyleBackColor = false;
+            this.btn_ajoutWishlist.Click += new System.EventHandler(this.btn_ajoutWishlist_Click);
             // 
             // InfosAlbum
             // 

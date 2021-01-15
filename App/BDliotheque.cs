@@ -85,11 +85,19 @@ namespace App
             int nb_char_suppr = "pic_allalb_".Length;
             int nb_picture = int.Parse(nom.Substring(nb_char_suppr, nom.Length-nb_char_suppr));
             Album album = albums[nb_picture - 1];
-            InfosAlbum infosAlbum = new InfosAlbum(album);
-            if (infosAlbum.ShowDialog() == DialogResult.OK)
-            {
-            }
 
+            InfosAlbum infosAlbum = new InfosAlbum(album);
+            DialogResult dialog = infosAlbum.ShowDialog();
+            if ( dialog == DialogResult.OK)
+            {
+                utilisateur.Bibliotheque.Add(album);
+            }
+            else
+                if(dialog == DialogResult.Yes)
+            {
+                utilisateur.Wishlist.Add(album);
+            }
+            utilisateurRepository.Save(utilisateur);
         }
         private void lb_nom_utilisateur_Click(object sender, EventArgs e)
         {

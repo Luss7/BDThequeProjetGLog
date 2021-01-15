@@ -14,9 +14,15 @@ namespace App
 {
     public partial class InfosAlbum : Form
     {
-        public InfosAlbum(Album album)
+        private Album album;
+        public InfosAlbum( Album album)
         {
             InitializeComponent();
+            this.album = album;
+            AfficherContenu();
+        }
+        private void AfficherContenu() 
+        { 
             pb_info.Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\DAL\\Images\\", album.ImageCouv)));
             lb_titreInfosAlbum.Text = album.Titre;
             lb_nomSerie.Text = album.Serie.Nom;
@@ -39,11 +45,17 @@ namespace App
                 nomsGenres += genres[i].Nom;
             }
             lb_nomGenre.Text = nomsGenres;
-
-
-            
+                      
         }
 
+        private void btn_ajoutMesAlbums_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.OK;
+        }
 
+        private void btn_ajoutWishlist_Click(object sender, EventArgs e)
+        {
+            this.DialogResult = DialogResult.Yes;
+        }
     }
 }
