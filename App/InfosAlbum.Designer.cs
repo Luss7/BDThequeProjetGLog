@@ -138,6 +138,7 @@ namespace App
             // btn_ajoutMesAlbums
             // 
             this.btn_ajoutMesAlbums.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_ajoutMesAlbums.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ajoutMesAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ajoutMesAlbums.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_ajoutMesAlbums.Location = new System.Drawing.Point(51, 572);
@@ -151,6 +152,7 @@ namespace App
             // btn_ajoutWishlist
             // 
             this.btn_ajoutWishlist.BackColor = System.Drawing.Color.DarkOrange;
+            this.btn_ajoutWishlist.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ajoutWishlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ajoutWishlist.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.btn_ajoutWishlist.Location = new System.Drawing.Point(372, 572);

@@ -30,7 +30,9 @@ namespace App
             albums = albumRepository.GetAll();
             categories = categorieRepository.GetAll();
             genres = genreRepository.GetAll();
+            Ouvrir_Connexion();
             AfficherTousAlbums();
+
         }
 
         private void InitRecherche()
@@ -85,7 +87,6 @@ namespace App
         }
         private void BDliotheque_Load(object sender, EventArgs e)
         {
-            Refresh_Utilisateurs();
             AfficheListAlbum(utilisateur.Bibliotheque, tabMesAlbums);
             AfficheListAlbum(utilisateur.Wishlist, tabWishlist);
             InitRecherche();
@@ -159,20 +160,23 @@ namespace App
             {
                 utilisateur.Bibliotheque.Add(album);
                 utilisateurRepository.Save(utilisateur);
+                ViderTab(tabMesAlbums);
                 AfficheListAlbum(utilisateur.Bibliotheque, tabMesAlbums);
 
-/*                if (utilisateur.Wishlist.Contains(album))
+                if (utilisateur.Wishlist.Contains(album))
                 {
                     utilisateur.Wishlist.Remove(album);
                     utilisateurRepository.Save(utilisateur);
+                    ViderTab(tabWishlist);
                     AfficheListAlbum(utilisateur.Wishlist, tabWishlist);
-                }*/
+                }
             }
 
             if (dialog == DialogResult.Yes)
             {
                 utilisateur.Wishlist.Add(album);
                 utilisateurRepository.Save(utilisateur);
+                ViderTab(tabMesAlbums);
                 AfficheListAlbum(utilisateur.Wishlist, tabWishlist);
             }
         }

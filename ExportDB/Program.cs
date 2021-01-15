@@ -16,14 +16,14 @@ namespace ExportDB
             sessionFactory = new Configuration().Configure().BuildSessionFactory();
 
             Console.WriteLine("Export du schema BD... ");
-            InitDB();
+            InitialisationDB();
             Console.WriteLine("Fait! ");
             Console.WriteLine("Remplissage de la BD... ");
             FillDB();
             Console.WriteLine("Fait!\n\nAppuyez sur une touche pour fermer le programme");
             Console.ReadKey();
         }
-        static void InitDB()
+        static void InitialisationDB()
         {
             Configuration cfg = new Configuration();
             cfg.Configure();
@@ -179,6 +179,8 @@ namespace ExportDB
 
                 UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
                 Utilisateur bpesquet = new Utilisateur("bpesquet", "jaimelegenielog");
+                Utilisateur sbertrand = new Utilisateur("sbertrand", "moiaussijaimelegenielog");
+                Utilisateur lulu31 = new Utilisateur("lulu31", "coucou");
 
                 categorieRepository.Save(manga);
                 categorieRepository.Save(bd);
@@ -256,6 +258,10 @@ namespace ExportDB
                 albumRepository.Save(alb15);
 
                 utilisateurRepository.Save(bpesquet);
+                utilisateurRepository.Save(sbertrand);
+                utilisateurRepository.Save(lulu31);
+
+                session.Clear();
             }
         }
     }

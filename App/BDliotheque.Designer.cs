@@ -380,6 +380,7 @@ namespace App
             // 
             // pic_allalb_15
             // 
+            this.pic_allalb_15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_15.Location = new System.Drawing.Point(565, 1132);
             this.pic_allalb_15.Name = "pic_allalb_15";
             this.pic_allalb_15.Size = new System.Drawing.Size(208, 235);
@@ -390,6 +391,7 @@ namespace App
             // 
             // pic_allalb_14
             // 
+            this.pic_allalb_14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_14.Location = new System.Drawing.Point(301, 1132);
             this.pic_allalb_14.Name = "pic_allalb_14";
             this.pic_allalb_14.Size = new System.Drawing.Size(208, 235);
@@ -400,6 +402,7 @@ namespace App
             // 
             // pic_allalb_13
             // 
+            this.pic_allalb_13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_13.Location = new System.Drawing.Point(45, 1132);
             this.pic_allalb_13.Name = "pic_allalb_13";
             this.pic_allalb_13.Size = new System.Drawing.Size(208, 235);
@@ -410,6 +413,7 @@ namespace App
             // 
             // pic_allalb_12
             // 
+            this.pic_allalb_12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_12.Location = new System.Drawing.Point(821, 784);
             this.pic_allalb_12.Name = "pic_allalb_12";
             this.pic_allalb_12.Size = new System.Drawing.Size(208, 235);
@@ -420,6 +424,7 @@ namespace App
             // 
             // pic_allalb_11
             // 
+            this.pic_allalb_11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_11.Location = new System.Drawing.Point(565, 784);
             this.pic_allalb_11.Name = "pic_allalb_11";
             this.pic_allalb_11.Size = new System.Drawing.Size(208, 235);
@@ -430,6 +435,7 @@ namespace App
             // 
             // pic_allalb_10
             // 
+            this.pic_allalb_10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_10.Location = new System.Drawing.Point(301, 784);
             this.pic_allalb_10.Name = "pic_allalb_10";
             this.pic_allalb_10.Size = new System.Drawing.Size(208, 235);
@@ -440,6 +446,7 @@ namespace App
             // 
             // pic_allalb_9
             // 
+            this.pic_allalb_9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_9.Location = new System.Drawing.Point(45, 784);
             this.pic_allalb_9.Name = "pic_allalb_9";
             this.pic_allalb_9.Size = new System.Drawing.Size(208, 235);
@@ -450,6 +457,7 @@ namespace App
             // 
             // pic_allalb_8
             // 
+            this.pic_allalb_8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_8.Location = new System.Drawing.Point(821, 447);
             this.pic_allalb_8.Name = "pic_allalb_8";
             this.pic_allalb_8.Size = new System.Drawing.Size(208, 235);
@@ -460,6 +468,7 @@ namespace App
             // 
             // pic_allalb_7
             // 
+            this.pic_allalb_7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_7.Location = new System.Drawing.Point(565, 447);
             this.pic_allalb_7.Name = "pic_allalb_7";
             this.pic_allalb_7.Size = new System.Drawing.Size(208, 235);
@@ -470,6 +479,7 @@ namespace App
             // 
             // pic_allalb_6
             // 
+            this.pic_allalb_6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_6.Location = new System.Drawing.Point(301, 447);
             this.pic_allalb_6.Name = "pic_allalb_6";
             this.pic_allalb_6.Size = new System.Drawing.Size(208, 235);
@@ -480,6 +490,7 @@ namespace App
             // 
             // pic_allalb_5
             // 
+            this.pic_allalb_5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_5.Location = new System.Drawing.Point(45, 447);
             this.pic_allalb_5.Name = "pic_allalb_5";
             this.pic_allalb_5.Size = new System.Drawing.Size(208, 235);
@@ -490,6 +501,7 @@ namespace App
             // 
             // pic_allalb_4
             // 
+            this.pic_allalb_4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_4.Location = new System.Drawing.Point(821, 102);
             this.pic_allalb_4.Name = "pic_allalb_4";
             this.pic_allalb_4.Size = new System.Drawing.Size(208, 235);
@@ -500,6 +512,7 @@ namespace App
             // 
             // pic_allalb_3
             // 
+            this.pic_allalb_3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_3.Location = new System.Drawing.Point(565, 102);
             this.pic_allalb_3.Name = "pic_allalb_3";
             this.pic_allalb_3.Size = new System.Drawing.Size(208, 235);
@@ -510,6 +523,7 @@ namespace App
             // 
             // pic_allalb_2
             // 
+            this.pic_allalb_2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_2.Location = new System.Drawing.Point(301, 102);
             this.pic_allalb_2.Name = "pic_allalb_2";
             this.pic_allalb_2.Size = new System.Drawing.Size(208, 235);

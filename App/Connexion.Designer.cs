@@ -93,6 +93,7 @@
             // btn_ValiderConnexion
             // 
             this.btn_ValiderConnexion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_ValiderConnexion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btn_ValiderConnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ValiderConnexion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btn_ValiderConnexion.Location = new System.Drawing.Point(486, 412);

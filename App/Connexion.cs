@@ -41,7 +41,6 @@ namespace App
                         }
                         else MessageBox.Show("Mot de passe incorrect");
                     }
-                    else MessageBox.Show("Login incorrect");
                 }
             }
             else MessageBox.Show("Aucun utilisateur récupéré");
