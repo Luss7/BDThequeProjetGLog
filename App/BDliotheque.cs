@@ -180,36 +180,7 @@ namespace App
                 AfficheListAlbum(utilisateur.Wishlist, tabWishlist);
             }
         }
-        private void lb_nom_utilisateur_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabTousAlbums_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_titreAlbum_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tabMesAlbums_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lb_tousLesAlbums_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tb_Recherche_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+      
         private void btn_rechCategorie_Click(object sender, EventArgs e)
         {
             ViderTab(tabRecherche);

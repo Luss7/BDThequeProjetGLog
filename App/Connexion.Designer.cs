@@ -80,7 +80,6 @@
             this.tb_Login.Name = "tb_Login";
             this.tb_Login.Size = new System.Drawing.Size(309, 22);
             this.tb_Login.TabIndex = 4;
-            this.tb_Login.TextChanged += new System.EventHandler(this.tb_Login_TextChanged);
             // 
             // tb_Mdp
             // 
@@ -130,11 +129,11 @@
             this.Controls.Add(this.lab_Mdp);
             this.Controls.Add(this.lab_Login);
             this.Controls.Add(this.lab_Connexion);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Connexion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Connexion";
-            this.Load += new System.EventHandler(this.Connexion_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

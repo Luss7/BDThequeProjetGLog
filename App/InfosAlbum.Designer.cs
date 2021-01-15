@@ -180,6 +180,7 @@ namespace App
             this.Controls.Add(this.lb_auteurs);
             this.Controls.Add(this.lb_titreInfosAlbum);
             this.Controls.Add(this.pb_info);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "InfosAlbum";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "InfosAlbum";

@@ -153,7 +153,6 @@ namespace App
             this.tabMesAlbums.TabIndex = 2;
             this.tabMesAlbums.Text = "Mes albums";
             this.tabMesAlbums.UseVisualStyleBackColor = true;
-            this.tabMesAlbums.Click += new System.EventHandler(this.tabMesAlbums_Click);
             // 
             // lb_MesAlbums
             // 
@@ -211,7 +210,6 @@ namespace App
             this.tabTousAlbums.TabIndex = 1;
             this.tabTousAlbums.Text = "Tous les albums";
             this.tabTousAlbums.UseVisualStyleBackColor = true;
-            this.tabTousAlbums.Click += new System.EventHandler(this.tabTousAlbums_Click);
             // 
             // lb_titreAlbum15
             // 
@@ -336,7 +334,6 @@ namespace App
             this.lb_tousLesAlbums.TabIndex = 53;
             this.lb_tousLesAlbums.Text = "Tous les albums";
             this.lb_tousLesAlbums.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lb_tousLesAlbums.Click += new System.EventHandler(this.lb_tousLesAlbums_Click);
             // 
             // lb_titreAlbum4
             // 
@@ -705,7 +702,6 @@ namespace App
             this.tb_Recherche.Name = "tb_Recherche";
             this.tb_Recherche.Size = new System.Drawing.Size(243, 30);
             this.tb_Recherche.TabIndex = 24;
-            this.tb_Recherche.TextChanged += new System.EventHandler(this.tb_Recherche_TextChanged);
             // 
             // link_Deconnexion
             // 
@@ -718,10 +714,10 @@ namespace App
             this.link_Deconnexion.Location = new System.Drawing.Point(945, 56);
             this.link_Deconnexion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.link_Deconnexion.Name = "link_Deconnexion";
-            this.link_Deconnexion.Size = new System.Drawing.Size(139, 26);
+            this.link_Deconnexion.Size = new System.Drawing.Size(116, 26);
             this.link_Deconnexion.TabIndex = 8;
             this.link_Deconnexion.TabStop = true;
-            this.link_Deconnexion.Text = "Déconnexion";
+            this.link_Deconnexion.Text = "Connexion";
             this.link_Deconnexion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.link_Deconnexion.VisitedLinkColor = System.Drawing.Color.White;
             this.link_Deconnexion.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Deconnexion_LinkClicked);
@@ -746,10 +742,9 @@ namespace App
             this.lb_nom_utilisateur.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.lb_nom_utilisateur.Location = new System.Drawing.Point(153, 56);
             this.lb_nom_utilisateur.Name = "lb_nom_utilisateur";
-            this.lb_nom_utilisateur.Size = new System.Drawing.Size(48, 26);
+            this.lb_nom_utilisateur.Size = new System.Drawing.Size(146, 26);
             this.lb_nom_utilisateur.TabIndex = 10;
-            this.lb_nom_utilisateur.Text = "rien";
-            this.lb_nom_utilisateur.Click += new System.EventHandler(this.lb_nom_utilisateur_Click);
+            this.lb_nom_utilisateur.Text = "Non connecté";
             // 
             // lab_utilisateur
             // 
@@ -774,6 +769,7 @@ namespace App
             this.Controls.Add(this.Tb_Titre);
             this.Controls.Add(this.tabMenu);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "BDliotheque";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BD\'liotheque";

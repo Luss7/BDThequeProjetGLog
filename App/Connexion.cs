@@ -15,16 +15,6 @@ namespace App
             user = new Utilisateur();
         }
 
-        private void Connexion_Load(object sender, System.EventArgs e)
-        {
-
-        }
-
-        private void tb_Login_TextChanged(object sender, System.EventArgs e)
-        {
-
-        }
-
         private void btn_ValiderConnexion_Click(object sender, System.EventArgs e)
         {
             if (users.Count > 0)
