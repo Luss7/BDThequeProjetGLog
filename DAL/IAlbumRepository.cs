@@ -10,6 +10,7 @@ namespace DAL
 
         IList<Album> GetAlbumsCategorie(string nomCategorie);
         IList<Album> GetAlbumsGenres(string nomGenre);
+        IList<Album> GetAlbumsMot(string mot);
 
         //Sauvegarde un album
         void Save(Album album);

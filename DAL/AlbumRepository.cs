@@ -1,8 +1,11 @@
 ﻿using Domain;
 using NHibernate;
 using NHibernate.Criterion;
+using NHibernate.Linq;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace DAL
 {
@@ -26,6 +29,24 @@ namespace DAL
         public IList<Album> GetAlbumsGenres(string nomGenre)
         {
             return Session.QueryOver<Album>().JoinQueryOver<Genre>(a => a.Genres).Where(g => g.Nom == nomGenre).List();
+        }
+        public IList<Album> GetAlbumsMot(string mot)
+        {
+            
+ //           var queryTitre = Session.QueryOver<Album>().Where(x => Regex.Match(x.Titre,@".+mot+.").Success).List();
+            /*var likestr = string.Format("%{0}%", mot);*/
+            /*            string input = "someString";
+                        string[] toSearchFor = GetSearchStrings();
+                        var containsAll = toSearchFor.All(x => input.Contains(x));*/
+            /*            string myString = "$randomText$";
+                        var match = Regex.Match(myString, @"\$.+\$");*/
+            //query = query.Where(x => x.adArea.Contains(";" + iArea.ToString() + ";"));
+            IList<Album> qTitre = Session.Query<Album>().Where(x => x.Titre.IndexOf(mot) >= 0).ToList();
+            IList<Album> qSerie = Session.Query<Album>().Where(x => x.Serie.Nom.IndexOf(mot) >= 0).ToList();
+            var qAuteurPrenom = Session.QueryOver<Album>().JoinQueryOver<Auteur>(x => x.Auteurs).Where(a => a.Prenom==mot).List();
+            var qAuteurNom = Session.QueryOver<Album>().JoinQueryOver<Auteur>(x => x.Auteurs).Where(a => a.Nom==mot).List();
+            IList<Album> myList2 = qTitre.Concat(qSerie).Concat(qAuteurPrenom).Concat(qAuteurNom).Distinct().ToList();
+            return myList2;
         }
 
     }

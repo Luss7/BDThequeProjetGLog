@@ -116,9 +116,9 @@ namespace App
                 var image = new PictureBox
                 {
                     Name = "pb_Albums" + i.ToString(),
-                    SizeMode = PictureBoxSizeMode.StretchImage,
                     Size = new Size(208, 235),
-                    Location = new Point(45+k + (i % 4) * locationX, 102+k + i / 4 * locationY),
+                    SizeMode = PictureBoxSizeMode.StretchImage,
+                    Location = new Point(45+k + (i % 3) * locationX, 102+k + i / 3 * locationY),
                     Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\DAL\\Images\\", monAlbum.ImageCouv))),
                 };
                 tabPage.Controls.Add(image);
@@ -128,7 +128,7 @@ namespace App
                     Name = "lb_AlbumsTitre" + i.ToString(),
                     Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))),
                     Size = new Size(210, 58),
-                    Location = new Point(43+k + (i % 4) * locationX, 354+k + i / 4 * locationY),
+                    Location = new Point(43+k + (i % 3) * locationX, 354+k + i / 3 * locationY),
                     AutoSize = false,
                     TextAlign = ContentAlignment.TopCenter,
                     Text = monAlbum.Titre,
@@ -219,6 +219,14 @@ namespace App
             ViderTab(tabRecherche);
             Genre genre = (Genre)comboBox_Genre.SelectedItem;
             IList<Album> albums = albumRepository.GetAlbumsGenres(genre.Nom);
+            AfficheListAlbum(albums, tabRecherche);
+        }
+
+        private void btn_rechMot_Click(object sender, EventArgs e)
+        {
+            ViderTab(tabRecherche);
+            string mot = tb_Recherche.Text;
+            IList<Album> albums = albumRepository.GetAlbumsMot(mot);
             AfficheListAlbum(albums, tabRecherche);
         }
     }
