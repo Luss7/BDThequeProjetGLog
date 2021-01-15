@@ -80,6 +80,9 @@ namespace App
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lb_nom_utilisateur = new System.Windows.Forms.Label();
             this.lab_utilisateur = new System.Windows.Forms.Label();
+            this.btn_rechMot = new System.Windows.Forms.Button();
+            this.btn_rechGenre = new System.Windows.Forms.Button();
+            this.btn_rechCategorie = new System.Windows.Forms.Button();
             this.tabWishlist.SuspendLayout();
             this.tabMesAlbums.SuspendLayout();
             this.tabTousAlbums.SuspendLayout();
@@ -559,6 +562,9 @@ namespace App
             // tabRecherche
             // 
             this.tabRecherche.AutoScroll = true;
+            this.tabRecherche.Controls.Add(this.btn_rechCategorie);
+            this.tabRecherche.Controls.Add(this.btn_rechGenre);
+            this.tabRecherche.Controls.Add(this.btn_rechMot);
             this.tabRecherche.Controls.Add(this.lab_SearchKeyWord);
             this.tabRecherche.Controls.Add(this.lab_SearchCategorie);
             this.tabRecherche.Controls.Add(this.lab_SearchGenre);
@@ -579,7 +585,7 @@ namespace App
             this.lab_SearchKeyWord.AutoSize = true;
             this.lab_SearchKeyWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_SearchKeyWord.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_SearchKeyWord.Location = new System.Drawing.Point(53, 68);
+            this.lab_SearchKeyWord.Location = new System.Drawing.Point(37, 69);
             this.lab_SearchKeyWord.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_SearchKeyWord.Name = "lab_SearchKeyWord";
             this.lab_SearchKeyWord.Size = new System.Drawing.Size(191, 20);
@@ -591,7 +597,7 @@ namespace App
             this.lab_SearchCategorie.AutoSize = true;
             this.lab_SearchCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_SearchCategorie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_SearchCategorie.Location = new System.Drawing.Point(845, 65);
+            this.lab_SearchCategorie.Location = new System.Drawing.Point(829, 66);
             this.lab_SearchCategorie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_SearchCategorie.Name = "lab_SearchCategorie";
             this.lab_SearchCategorie.Size = new System.Drawing.Size(208, 20);
@@ -603,7 +609,7 @@ namespace App
             this.lab_SearchGenre.AutoSize = true;
             this.lab_SearchGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_SearchGenre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_SearchGenre.Location = new System.Drawing.Point(481, 65);
+            this.lab_SearchGenre.Location = new System.Drawing.Point(465, 66);
             this.lab_SearchGenre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_SearchGenre.Name = "lab_SearchGenre";
             this.lab_SearchGenre.Size = new System.Drawing.Size(172, 20);
@@ -626,7 +632,7 @@ namespace App
             // 
             this.comboBox_Catégorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Catégorie.FormattingEnabled = true;
-            this.comboBox_Catégorie.Location = new System.Drawing.Point(849, 90);
+            this.comboBox_Catégorie.Location = new System.Drawing.Point(833, 91);
             this.comboBox_Catégorie.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Catégorie.Name = "comboBox_Catégorie";
             this.comboBox_Catégorie.Size = new System.Drawing.Size(160, 33);
@@ -637,7 +643,7 @@ namespace App
             // 
             this.comboBox_Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Genre.FormattingEnabled = true;
-            this.comboBox_Genre.Location = new System.Drawing.Point(485, 90);
+            this.comboBox_Genre.Location = new System.Drawing.Point(469, 91);
             this.comboBox_Genre.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Genre.Name = "comboBox_Genre";
             this.comboBox_Genre.Size = new System.Drawing.Size(160, 33);
@@ -646,11 +652,12 @@ namespace App
             // 
             // tb_Recherche
             // 
-            this.tb_Recherche.Location = new System.Drawing.Point(57, 91);
+            this.tb_Recherche.Location = new System.Drawing.Point(41, 92);
             this.tb_Recherche.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Recherche.Name = "tb_Recherche";
             this.tb_Recherche.Size = new System.Drawing.Size(243, 38);
             this.tb_Recherche.TabIndex = 24;
+            this.tb_Recherche.TextChanged += new System.EventHandler(this.tb_Recherche_TextChanged);
             // 
             // link_Deconnexion
             // 
@@ -707,6 +714,38 @@ namespace App
             this.lab_utilisateur.Size = new System.Drawing.Size(121, 26);
             this.lab_utilisateur.TabIndex = 11;
             this.lab_utilisateur.Text = "Utilisateur :";
+            // 
+            // btn_rechMot
+            // 
+            this.btn_rechMot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rechMot.Location = new System.Drawing.Point(301, 92);
+            this.btn_rechMot.Name = "btn_rechMot";
+            this.btn_rechMot.Size = new System.Drawing.Size(75, 38);
+            this.btn_rechMot.TabIndex = 31;
+            this.btn_rechMot.Text = "Go";
+            this.btn_rechMot.UseVisualStyleBackColor = true;
+            // 
+            // btn_rechGenre
+            // 
+            this.btn_rechGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rechGenre.Location = new System.Drawing.Point(645, 89);
+            this.btn_rechGenre.Name = "btn_rechGenre";
+            this.btn_rechGenre.Size = new System.Drawing.Size(75, 35);
+            this.btn_rechGenre.TabIndex = 32;
+            this.btn_rechGenre.Text = "Go";
+            this.btn_rechGenre.UseVisualStyleBackColor = true;
+            this.btn_rechGenre.Click += new System.EventHandler(this.btn_rechGenre_Click);
+            // 
+            // btn_rechCategorie
+            // 
+            this.btn_rechCategorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_rechCategorie.Location = new System.Drawing.Point(1006, 89);
+            this.btn_rechCategorie.Name = "btn_rechCategorie";
+            this.btn_rechCategorie.Size = new System.Drawing.Size(75, 35);
+            this.btn_rechCategorie.TabIndex = 33;
+            this.btn_rechCategorie.Text = "Go";
+            this.btn_rechCategorie.UseVisualStyleBackColor = true;
+            this.btn_rechCategorie.Click += new System.EventHandler(this.btn_rechCategorie_Click);
             // 
             // BDliotheque
             // 
@@ -802,5 +841,8 @@ namespace App
         private System.Windows.Forms.Label lb_titreAlbum2;
         private System.Windows.Forms.Label lb_titreAlbum1;
         private System.Windows.Forms.Label lb_titreAlbum12;
+        private System.Windows.Forms.Button btn_rechCategorie;
+        private System.Windows.Forms.Button btn_rechGenre;
+        private System.Windows.Forms.Button btn_rechMot;
     }
 }

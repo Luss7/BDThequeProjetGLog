@@ -158,7 +158,7 @@ namespace ExportDB
                 alb11.Auteurs.Add(spiegelman);
                 alb11.Genres.Add(documentaireEncyclopedie);
 
-                Album alb12 = new Album("asterix-le-gaulois.jpg", "Astérix - 2 - La serpe d'or", bd, dargaud, asterix);
+                Album alb12 = new Album("asterix-la-serpe-dor.jpg", "Astérix - 2 - La serpe d'or", bd, dargaud, asterix);
                 alb12.Auteurs.Add(goscinny);
                 alb12.Auteurs.Add(uderzo);
                 alb12.Genres.Add(humour);

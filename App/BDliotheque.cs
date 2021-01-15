@@ -31,7 +31,6 @@ namespace App
             categories = categorieRepository.GetAll();
             genres = genreRepository.GetAll();
             AfficherTousAlbums();
-
         }
 
         private void InitRecherche()
@@ -91,29 +90,45 @@ namespace App
             AfficheListAlbum(utilisateur.Wishlist, tabWishlist);
             InitRecherche();
         }
+        private void ViderTab(TabPage tabPage)
+        {
+            List<Control> listControl = new List<Control>();
+            foreach (Control control in tabPage.Controls)
+            {
+                listControl.Add(control);
+            }
+            foreach (Control control in listControl)
+            {
+                string nom = control.Name;
+                if (nom.StartsWith("pb_Albums") || nom.StartsWith("lb_AlbumsTitre"))
+                    tabPage.Controls.Remove(control);
+            }
+        }
         private void AfficheListAlbum(IList<Album> listAlbums, TabPage tabPage)
         {
-            int i = 0;
+
+            int i = 0, k = 0;
+            if (tabPage == tabRecherche) k = 20;
             int locationX = 256; //+256 = + i mod 4 *256
             int locationY = 345; //+345 ->i = 5, *2 -> i = 9 -> (i-1)/4*345
             foreach (Album monAlbum in listAlbums)
             {
                 var image = new PictureBox
                 {
-                    Name = "pb_mesAlbums" + i.ToString(),
+                    Name = "pb_Albums" + i.ToString(),
                     SizeMode = PictureBoxSizeMode.StretchImage,
                     Size = new Size(208, 235),
-                    Location = new Point(45 + (i % 4) * locationX, 102 + i / 4 * locationY),
+                    Location = new Point(45+k + (i % 4) * locationX, 102+k + i / 4 * locationY),
                     Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\DAL\\Images\\", monAlbum.ImageCouv))),
                 };
                 tabPage.Controls.Add(image);
 
                 var titre = new Label
                 {
-                    Name = "lb_mesAlbumsTitre" + i.ToString(),
+                    Name = "lb_AlbumsTitre" + i.ToString(),
                     Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(0))),
                     Size = new Size(210, 58),
-                    Location = new Point(43 + (i % 4) * locationX, 354 + i / 4 * locationY),
+                    Location = new Point(43+k + (i % 4) * locationX, 354+k + i / 4 * locationY),
                     AutoSize = false,
                     TextAlign = ContentAlignment.TopCenter,
                     Text = monAlbum.Titre,
@@ -152,9 +167,8 @@ namespace App
                     utilisateurRepository.Save(utilisateur);
                     AfficheListAlbum(utilisateur.Wishlist, tabWishlist);
                 }*/
-
-
             }
+
             if (dialog == DialogResult.Yes)
             {
                 utilisateur.Wishlist.Add(album);
@@ -185,6 +199,27 @@ namespace App
         private void lb_tousLesAlbums_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void tb_Recherche_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_rechCategorie_Click(object sender, EventArgs e)
+        {
+            ViderTab(tabRecherche);
+            Categorie categorie = (Categorie)comboBox_Catégorie.SelectedItem;
+            IList<Album> albums = albumRepository.GetAlbumsCategorie(categorie.Nom);
+            AfficheListAlbum(albums, tabRecherche);
+        }
+
+        private void btn_rechGenre_Click(object sender, EventArgs e)
+        {
+            ViderTab(tabRecherche);
+            Genre genre = (Genre)comboBox_Genre.SelectedItem;
+            IList<Album> albums = albumRepository.GetAlbumsGenres(genre.Nom);
+            AfficheListAlbum(albums, tabRecherche);
         }
     }
 }
