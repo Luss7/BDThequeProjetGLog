@@ -18,47 +18,35 @@ namespace App
         private IUtilisateurRepository utilisateurRepository;
         private IAlbumRepository albumRepository;
         private Utilisateur utilisateur;
+        private List<Album> albums = new List<Album>();
         public BDliotheque(IUtilisateurRepository utilisateurRepository, IAlbumRepository albumRepository)
         {
             InitializeComponent();
             this.utilisateurRepository = utilisateurRepository;
             this.albumRepository = albumRepository;
             utilisateur = utilisateurRepository.GetAll()[0];
+            albums = albumRepository.GetAll();
             AfficherContenu();
 
         }
 
         private void AfficherContenu()
         {
-            List<Album> albums = albumRepository.GetAll();
             List<PictureBox> boxImages = new List<PictureBox>();
             List<Label> labelTitre = new List<Label>();
-            //Affichage images
+            //Constructions listes de PictureBox et Label
             for(int i = 1; i <= 15; i++)
             {
                 boxImages.Add((PictureBox)Controls.Find("pic_allalb_" + i, true)[0]);
                 labelTitre.Add((Label)Controls.Find("lb_titreAlbum" + i, true)[0]);
             }
            
-/*            foreach (Control c in tabTousAlbums.Controls)
-            {
-                if (c is PictureBox)
-                {
-                    boxImages.Add((PictureBox)c);
-                }
-                if(c is Label)
-                {
-                    labelTitre.Add((Label)c);
-                }
-            }*/
+            //Remplissage des PicturesBox et Labels avec les infos des albums
             for (int i = 0; i < 15; i++)
             {
                 boxImages[i].Image = Image.FromFile(Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "..\\..\\..\\DAL\\Images\\", albums[i].ImageCouv)));
                 labelTitre[i].Text = albums[i].Titre;
             }
-
-            //Affichage TitreBD
-
 
         }
 
@@ -80,7 +68,6 @@ namespace App
         private void BDliotheque_Load(object sender, EventArgs e)
         {
             Refresh_Utilisateurs();
-
         }
 
         private void link_Deconnexion_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -88,6 +75,22 @@ namespace App
             Ouvrir_Connexion();
         }
 
+        void pictureAlbum_Click(object sender, EventArgs e)
+        {
+            //envoyer l'album dans infoalbum pour qu'il affiche les infos
+                //Récupérer l'album
+                    //Récupérer le numero de la picture dans le nom
+            PictureBox picture = sender as PictureBox;
+            string nom = picture.Name;
+            int nb_char_suppr = "pic_allalb_".Length;
+            int nb_picture = int.Parse(nom.Substring(nb_char_suppr, nom.Length-nb_char_suppr));
+            Album album = albums[nb_picture - 1];
+            InfosAlbum infosAlbum = new InfosAlbum(album);
+            if (infosAlbum.ShowDialog() == DialogResult.OK)
+            {
+            }
+
+        }
         private void lb_nom_utilisateur_Click(object sender, EventArgs e)
         {
 
@@ -97,10 +100,12 @@ namespace App
         {
 
         }
-
-        private void lb_titreAlbum1_Click(object sender, EventArgs e)
+        
+        private void lb_titreAlbum_Click(object sender, EventArgs e)
         {
 
         }
+        
+
     }
 }

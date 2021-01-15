@@ -39,6 +39,22 @@ namespace App
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_MesAlbums = new System.Windows.Forms.Label();
             this.tabTousAlbums = new System.Windows.Forms.TabPage();
+            this.lb_titreAlbum15 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum14 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum13 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum12 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum11 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum10 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum9 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum8 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum7 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum6 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum5 = new System.Windows.Forms.Label();
+            this.lb_tousLesAlbums = new System.Windows.Forms.Label();
+            this.lb_titreAlbum4 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum3 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum2 = new System.Windows.Forms.Label();
+            this.lb_titreAlbum1 = new System.Windows.Forms.Label();
             this.pic_allalb_15 = new System.Windows.Forms.PictureBox();
             this.pic_allalb_14 = new System.Windows.Forms.PictureBox();
             this.pic_allalb_13 = new System.Windows.Forms.PictureBox();
@@ -68,22 +84,6 @@ namespace App
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lb_nom_utilisateur = new System.Windows.Forms.Label();
             this.lab_utilisateur = new System.Windows.Forms.Label();
-            this.lb_titreAlbum4 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum3 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum2 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum1 = new System.Windows.Forms.Label();
-            this.lb_tousLesAlbums = new System.Windows.Forms.Label();
-            this.lb_titreAlbum8 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum7 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum6 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum5 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum12 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum11 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum10 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum9 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum15 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum14 = new System.Windows.Forms.Label();
-            this.lb_titreAlbum13 = new System.Windows.Forms.Label();
             this.tabWishlist.SuspendLayout();
             this.tabMesAlbums.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -129,7 +129,7 @@ namespace App
             this.tabWishlist.Location = new System.Drawing.Point(4, 47);
             this.tabWishlist.Name = "tabWishlist";
             this.tabWishlist.Padding = new System.Windows.Forms.Padding(3);
-            this.tabWishlist.Size = new System.Drawing.Size(1091, 497);
+            this.tabWishlist.Size = new System.Drawing.Size(1091, 489);
             this.tabWishlist.TabIndex = 3;
             this.tabWishlist.Text = "Ma wishlist";
             this.tabWishlist.UseVisualStyleBackColor = true;
@@ -156,7 +156,7 @@ namespace App
             this.tabMesAlbums.Location = new System.Drawing.Point(4, 47);
             this.tabMesAlbums.Name = "tabMesAlbums";
             this.tabMesAlbums.Padding = new System.Windows.Forms.Padding(3);
-            this.tabMesAlbums.Size = new System.Drawing.Size(1091, 559);
+            this.tabMesAlbums.Size = new System.Drawing.Size(1091, 489);
             this.tabMesAlbums.TabIndex = 2;
             this.tabMesAlbums.Text = "Mes albums";
             this.tabMesAlbums.UseVisualStyleBackColor = true;
@@ -252,6 +252,171 @@ namespace App
             this.tabTousAlbums.UseVisualStyleBackColor = true;
             this.tabTousAlbums.Click += new System.EventHandler(this.tabTousAlbums_Click);
             // 
+            // lb_titreAlbum15
+            // 
+            this.lb_titreAlbum15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum15.Location = new System.Drawing.Point(560, 1422);
+            this.lb_titreAlbum15.Name = "lb_titreAlbum15";
+            this.lb_titreAlbum15.Size = new System.Drawing.Size(210, 57);
+            this.lb_titreAlbum15.TabIndex = 64;
+            this.lb_titreAlbum15.Text = "Titre";
+            this.lb_titreAlbum15.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum14
+            // 
+            this.lb_titreAlbum14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum14.Location = new System.Drawing.Point(296, 1422);
+            this.lb_titreAlbum14.Name = "lb_titreAlbum14";
+            this.lb_titreAlbum14.Size = new System.Drawing.Size(210, 57);
+            this.lb_titreAlbum14.TabIndex = 63;
+            this.lb_titreAlbum14.Text = "Titre";
+            this.lb_titreAlbum14.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum13
+            // 
+            this.lb_titreAlbum13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum13.Location = new System.Drawing.Point(40, 1422);
+            this.lb_titreAlbum13.Name = "lb_titreAlbum13";
+            this.lb_titreAlbum13.Size = new System.Drawing.Size(210, 57);
+            this.lb_titreAlbum13.TabIndex = 62;
+            this.lb_titreAlbum13.Text = "Titre";
+            this.lb_titreAlbum13.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum12
+            // 
+            this.lb_titreAlbum12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum12.Location = new System.Drawing.Point(816, 1073);
+            this.lb_titreAlbum12.Name = "lb_titreAlbum12";
+            this.lb_titreAlbum12.Size = new System.Drawing.Size(210, 55);
+            this.lb_titreAlbum12.TabIndex = 61;
+            this.lb_titreAlbum12.Text = "Titre";
+            this.lb_titreAlbum12.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum11
+            // 
+            this.lb_titreAlbum11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum11.Location = new System.Drawing.Point(560, 1073);
+            this.lb_titreAlbum11.Name = "lb_titreAlbum11";
+            this.lb_titreAlbum11.Size = new System.Drawing.Size(210, 55);
+            this.lb_titreAlbum11.TabIndex = 60;
+            this.lb_titreAlbum11.Text = "Titre";
+            this.lb_titreAlbum11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum10
+            // 
+            this.lb_titreAlbum10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum10.Location = new System.Drawing.Point(296, 1073);
+            this.lb_titreAlbum10.Name = "lb_titreAlbum10";
+            this.lb_titreAlbum10.Size = new System.Drawing.Size(210, 55);
+            this.lb_titreAlbum10.TabIndex = 59;
+            this.lb_titreAlbum10.Text = "Titre";
+            this.lb_titreAlbum10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum9
+            // 
+            this.lb_titreAlbum9.AutoEllipsis = true;
+            this.lb_titreAlbum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum9.Location = new System.Drawing.Point(40, 1073);
+            this.lb_titreAlbum9.Name = "lb_titreAlbum9";
+            this.lb_titreAlbum9.Size = new System.Drawing.Size(210, 55);
+            this.lb_titreAlbum9.TabIndex = 58;
+            this.lb_titreAlbum9.Text = "Titre";
+            this.lb_titreAlbum9.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum8
+            // 
+            this.lb_titreAlbum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum8.Location = new System.Drawing.Point(816, 736);
+            this.lb_titreAlbum8.Name = "lb_titreAlbum8";
+            this.lb_titreAlbum8.Size = new System.Drawing.Size(210, 53);
+            this.lb_titreAlbum8.TabIndex = 57;
+            this.lb_titreAlbum8.Text = "Titre";
+            this.lb_titreAlbum8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum7
+            // 
+            this.lb_titreAlbum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum7.Location = new System.Drawing.Point(558, 736);
+            this.lb_titreAlbum7.Name = "lb_titreAlbum7";
+            this.lb_titreAlbum7.Size = new System.Drawing.Size(210, 53);
+            this.lb_titreAlbum7.TabIndex = 56;
+            this.lb_titreAlbum7.Text = "Titre";
+            this.lb_titreAlbum7.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum6
+            // 
+            this.lb_titreAlbum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum6.Location = new System.Drawing.Point(294, 736);
+            this.lb_titreAlbum6.Name = "lb_titreAlbum6";
+            this.lb_titreAlbum6.Size = new System.Drawing.Size(210, 53);
+            this.lb_titreAlbum6.TabIndex = 55;
+            this.lb_titreAlbum6.Text = "Titre";
+            this.lb_titreAlbum6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum5
+            // 
+            this.lb_titreAlbum5.AutoEllipsis = true;
+            this.lb_titreAlbum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum5.Location = new System.Drawing.Point(38, 736);
+            this.lb_titreAlbum5.Name = "lb_titreAlbum5";
+            this.lb_titreAlbum5.Size = new System.Drawing.Size(210, 53);
+            this.lb_titreAlbum5.TabIndex = 54;
+            this.lb_titreAlbum5.Text = "Titre";
+            this.lb_titreAlbum5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_tousLesAlbums
+            // 
+            this.lb_tousLesAlbums.AutoSize = true;
+            this.lb_tousLesAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tousLesAlbums.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lb_tousLesAlbums.Location = new System.Drawing.Point(424, 16);
+            this.lb_tousLesAlbums.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lb_tousLesAlbums.Name = "lb_tousLesAlbums";
+            this.lb_tousLesAlbums.Size = new System.Drawing.Size(280, 39);
+            this.lb_tousLesAlbums.TabIndex = 53;
+            this.lb_tousLesAlbums.Text = "Tous les albums";
+            this.lb_tousLesAlbums.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum4
+            // 
+            this.lb_titreAlbum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum4.Location = new System.Drawing.Point(814, 389);
+            this.lb_titreAlbum4.Name = "lb_titreAlbum4";
+            this.lb_titreAlbum4.Size = new System.Drawing.Size(218, 58);
+            this.lb_titreAlbum4.TabIndex = 48;
+            this.lb_titreAlbum4.Text = "Titre";
+            this.lb_titreAlbum4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum3
+            // 
+            this.lb_titreAlbum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum3.Location = new System.Drawing.Point(558, 389);
+            this.lb_titreAlbum3.Name = "lb_titreAlbum3";
+            this.lb_titreAlbum3.Size = new System.Drawing.Size(210, 58);
+            this.lb_titreAlbum3.TabIndex = 47;
+            this.lb_titreAlbum3.Text = "Titre";
+            this.lb_titreAlbum3.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum2
+            // 
+            this.lb_titreAlbum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum2.Location = new System.Drawing.Point(294, 389);
+            this.lb_titreAlbum2.Name = "lb_titreAlbum2";
+            this.lb_titreAlbum2.Size = new System.Drawing.Size(210, 58);
+            this.lb_titreAlbum2.TabIndex = 46;
+            this.lb_titreAlbum2.Text = "Titre";
+            this.lb_titreAlbum2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // lb_titreAlbum1
+            // 
+            this.lb_titreAlbum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_titreAlbum1.Location = new System.Drawing.Point(41, 389);
+            this.lb_titreAlbum1.Name = "lb_titreAlbum1";
+            this.lb_titreAlbum1.Size = new System.Drawing.Size(210, 58);
+            this.lb_titreAlbum1.TabIndex = 45;
+            this.lb_titreAlbum1.Text = "Titre";
+            this.lb_titreAlbum1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // pic_allalb_15
             // 
             this.pic_allalb_15.Location = new System.Drawing.Point(565, 1167);
@@ -260,6 +425,7 @@ namespace App
             this.pic_allalb_15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_15.TabIndex = 32;
             this.pic_allalb_15.TabStop = false;
+            this.pic_allalb_15.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_14
             // 
@@ -269,6 +435,7 @@ namespace App
             this.pic_allalb_14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_14.TabIndex = 31;
             this.pic_allalb_14.TabStop = false;
+            this.pic_allalb_14.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_13
             // 
@@ -278,6 +445,7 @@ namespace App
             this.pic_allalb_13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_13.TabIndex = 30;
             this.pic_allalb_13.TabStop = false;
+            this.pic_allalb_13.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_12
             // 
@@ -287,6 +455,7 @@ namespace App
             this.pic_allalb_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_12.TabIndex = 29;
             this.pic_allalb_12.TabStop = false;
+            this.pic_allalb_12.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_11
             // 
@@ -296,6 +465,7 @@ namespace App
             this.pic_allalb_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_11.TabIndex = 28;
             this.pic_allalb_11.TabStop = false;
+            this.pic_allalb_11.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_10
             // 
@@ -305,6 +475,7 @@ namespace App
             this.pic_allalb_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_10.TabIndex = 27;
             this.pic_allalb_10.TabStop = false;
+            this.pic_allalb_10.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_9
             // 
@@ -314,6 +485,7 @@ namespace App
             this.pic_allalb_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_9.TabIndex = 26;
             this.pic_allalb_9.TabStop = false;
+            this.pic_allalb_9.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_8
             // 
@@ -323,6 +495,7 @@ namespace App
             this.pic_allalb_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_8.TabIndex = 25;
             this.pic_allalb_8.TabStop = false;
+            this.pic_allalb_8.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_7
             // 
@@ -332,6 +505,7 @@ namespace App
             this.pic_allalb_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_7.TabIndex = 24;
             this.pic_allalb_7.TabStop = false;
+            this.pic_allalb_7.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_6
             // 
@@ -341,6 +515,7 @@ namespace App
             this.pic_allalb_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_6.TabIndex = 23;
             this.pic_allalb_6.TabStop = false;
+            this.pic_allalb_6.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_5
             // 
@@ -350,6 +525,7 @@ namespace App
             this.pic_allalb_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_5.TabIndex = 22;
             this.pic_allalb_5.TabStop = false;
+            this.pic_allalb_5.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_4
             // 
@@ -359,6 +535,7 @@ namespace App
             this.pic_allalb_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_4.TabIndex = 21;
             this.pic_allalb_4.TabStop = false;
+            this.pic_allalb_4.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_3
             // 
@@ -368,6 +545,7 @@ namespace App
             this.pic_allalb_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_3.TabIndex = 20;
             this.pic_allalb_3.TabStop = false;
+            this.pic_allalb_3.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_2
             // 
@@ -377,16 +555,19 @@ namespace App
             this.pic_allalb_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_2.TabIndex = 18;
             this.pic_allalb_2.TabStop = false;
+            this.pic_allalb_2.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // pic_allalb_1
             // 
             this.pic_allalb_1.BackColor = System.Drawing.SystemColors.Control;
+            this.pic_allalb_1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pic_allalb_1.Location = new System.Drawing.Point(43, 137);
             this.pic_allalb_1.Name = "pic_allalb_1";
             this.pic_allalb_1.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_allalb_1.TabIndex = 17;
             this.pic_allalb_1.TabStop = false;
+            this.pic_allalb_1.Click += new System.EventHandler(this.pictureAlbum_Click);
             // 
             // lab_AllAlbums
             // 
@@ -429,7 +610,7 @@ namespace App
             this.tabRecherche.Location = new System.Drawing.Point(4, 47);
             this.tabRecherche.Name = "tabRecherche";
             this.tabRecherche.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRecherche.Size = new System.Drawing.Size(1091, 497);
+            this.tabRecherche.Size = new System.Drawing.Size(1091, 489);
             this.tabRecherche.TabIndex = 4;
             this.tabRecherche.Text = "Recherche";
             this.tabRecherche.UseVisualStyleBackColor = true;
@@ -565,187 +746,6 @@ namespace App
             this.lab_utilisateur.Size = new System.Drawing.Size(121, 26);
             this.lab_utilisateur.TabIndex = 11;
             this.lab_utilisateur.Text = "Utilisateur :";
-            // 
-            // lb_titreAlbum4
-            // 
-            this.lb_titreAlbum4.AutoSize = true;
-            this.lb_titreAlbum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum4.Location = new System.Drawing.Point(814, 389);
-            this.lb_titreAlbum4.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum4.Name = "lb_titreAlbum4";
-            this.lb_titreAlbum4.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum4.TabIndex = 48;
-            this.lb_titreAlbum4.Text = "Titre";
-            // 
-            // lb_titreAlbum3
-            // 
-            this.lb_titreAlbum3.AutoSize = true;
-            this.lb_titreAlbum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum3.Location = new System.Drawing.Point(558, 389);
-            this.lb_titreAlbum3.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum3.Name = "lb_titreAlbum3";
-            this.lb_titreAlbum3.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum3.TabIndex = 47;
-            this.lb_titreAlbum3.Text = "Titre";
-            // 
-            // lb_titreAlbum2
-            // 
-            this.lb_titreAlbum2.AutoSize = true;
-            this.lb_titreAlbum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum2.Location = new System.Drawing.Point(294, 389);
-            this.lb_titreAlbum2.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum2.Name = "lb_titreAlbum2";
-            this.lb_titreAlbum2.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum2.TabIndex = 46;
-            this.lb_titreAlbum2.Text = "Titre";
-            // 
-            // lb_titreAlbum1
-            // 
-            this.lb_titreAlbum1.AutoSize = true;
-            this.lb_titreAlbum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum1.Location = new System.Drawing.Point(38, 389);
-            this.lb_titreAlbum1.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum1.Name = "lb_titreAlbum1";
-            this.lb_titreAlbum1.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum1.TabIndex = 45;
-            this.lb_titreAlbum1.Text = "Titre";
-            this.lb_titreAlbum1.Click += new System.EventHandler(this.lb_titreAlbum1_Click);
-            // 
-            // lb_tousLesAlbums
-            // 
-            this.lb_tousLesAlbums.AutoSize = true;
-            this.lb_tousLesAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tousLesAlbums.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb_tousLesAlbums.Location = new System.Drawing.Point(424, 16);
-            this.lb_tousLesAlbums.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lb_tousLesAlbums.Name = "lb_tousLesAlbums";
-            this.lb_tousLesAlbums.Size = new System.Drawing.Size(280, 39);
-            this.lb_tousLesAlbums.TabIndex = 53;
-            this.lb_tousLesAlbums.Text = "Tous les albums";
-            this.lb_tousLesAlbums.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // lb_titreAlbum8
-            // 
-            this.lb_titreAlbum8.AutoSize = true;
-            this.lb_titreAlbum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum8.Location = new System.Drawing.Point(816, 736);
-            this.lb_titreAlbum8.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum8.Name = "lb_titreAlbum8";
-            this.lb_titreAlbum8.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum8.TabIndex = 57;
-            this.lb_titreAlbum8.Text = "Titre";
-            // 
-            // lb_titreAlbum7
-            // 
-            this.lb_titreAlbum7.AutoSize = true;
-            this.lb_titreAlbum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum7.Location = new System.Drawing.Point(558, 736);
-            this.lb_titreAlbum7.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum7.Name = "lb_titreAlbum7";
-            this.lb_titreAlbum7.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum7.TabIndex = 56;
-            this.lb_titreAlbum7.Text = "Titre";
-            // 
-            // lb_titreAlbum6
-            // 
-            this.lb_titreAlbum6.AutoSize = true;
-            this.lb_titreAlbum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum6.Location = new System.Drawing.Point(294, 736);
-            this.lb_titreAlbum6.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum6.Name = "lb_titreAlbum6";
-            this.lb_titreAlbum6.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum6.TabIndex = 55;
-            this.lb_titreAlbum6.Text = "Titre";
-            // 
-            // lb_titreAlbum5
-            // 
-            this.lb_titreAlbum5.AutoEllipsis = true;
-            this.lb_titreAlbum5.AutoSize = true;
-            this.lb_titreAlbum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum5.Location = new System.Drawing.Point(38, 736);
-            this.lb_titreAlbum5.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum5.Name = "lb_titreAlbum5";
-            this.lb_titreAlbum5.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum5.TabIndex = 54;
-            this.lb_titreAlbum5.Text = "Titre";
-            // 
-            // lb_titreAlbum12
-            // 
-            this.lb_titreAlbum12.AutoSize = true;
-            this.lb_titreAlbum12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum12.Location = new System.Drawing.Point(816, 1073);
-            this.lb_titreAlbum12.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum12.Name = "lb_titreAlbum12";
-            this.lb_titreAlbum12.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum12.TabIndex = 61;
-            this.lb_titreAlbum12.Text = "Titre";
-            // 
-            // lb_titreAlbum11
-            // 
-            this.lb_titreAlbum11.AutoSize = true;
-            this.lb_titreAlbum11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum11.Location = new System.Drawing.Point(560, 1073);
-            this.lb_titreAlbum11.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum11.Name = "lb_titreAlbum11";
-            this.lb_titreAlbum11.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum11.TabIndex = 60;
-            this.lb_titreAlbum11.Text = "Titre";
-            // 
-            // lb_titreAlbum10
-            // 
-            this.lb_titreAlbum10.AutoSize = true;
-            this.lb_titreAlbum10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum10.Location = new System.Drawing.Point(296, 1073);
-            this.lb_titreAlbum10.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum10.Name = "lb_titreAlbum10";
-            this.lb_titreAlbum10.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum10.TabIndex = 59;
-            this.lb_titreAlbum10.Text = "Titre";
-            // 
-            // lb_titreAlbum9
-            // 
-            this.lb_titreAlbum9.AutoEllipsis = true;
-            this.lb_titreAlbum9.AutoSize = true;
-            this.lb_titreAlbum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum9.Location = new System.Drawing.Point(40, 1073);
-            this.lb_titreAlbum9.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum9.Name = "lb_titreAlbum9";
-            this.lb_titreAlbum9.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum9.TabIndex = 58;
-            this.lb_titreAlbum9.Text = "Titre";
-            // 
-            // lb_titreAlbum15
-            // 
-            this.lb_titreAlbum15.AutoSize = true;
-            this.lb_titreAlbum15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum15.Location = new System.Drawing.Point(560, 1422);
-            this.lb_titreAlbum15.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum15.Name = "lb_titreAlbum15";
-            this.lb_titreAlbum15.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum15.TabIndex = 64;
-            this.lb_titreAlbum15.Text = "Titre";
-            // 
-            // lb_titreAlbum14
-            // 
-            this.lb_titreAlbum14.AutoSize = true;
-            this.lb_titreAlbum14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum14.Location = new System.Drawing.Point(296, 1422);
-            this.lb_titreAlbum14.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum14.Name = "lb_titreAlbum14";
-            this.lb_titreAlbum14.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum14.TabIndex = 63;
-            this.lb_titreAlbum14.Text = "Titre";
-            // 
-            // lb_titreAlbum13
-            // 
-            this.lb_titreAlbum13.AutoSize = true;
-            this.lb_titreAlbum13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum13.Location = new System.Drawing.Point(40, 1422);
-            this.lb_titreAlbum13.MaximumSize = new System.Drawing.Size(210, 0);
-            this.lb_titreAlbum13.Name = "lb_titreAlbum13";
-            this.lb_titreAlbum13.Size = new System.Drawing.Size(51, 25);
-            this.lb_titreAlbum13.TabIndex = 62;
-            this.lb_titreAlbum13.Text = "Titre";
             // 
             // BDliotheque
             // 
