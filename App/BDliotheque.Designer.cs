@@ -33,10 +33,6 @@ namespace App
             this.tabWishlist = new System.Windows.Forms.TabPage();
             this.lb_MaWishlist = new System.Windows.Forms.Label();
             this.tabMesAlbums = new System.Windows.Forms.TabPage();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lb_MesAlbums = new System.Windows.Forms.Label();
             this.tabTousAlbums = new System.Windows.Forms.TabPage();
             this.lb_titreAlbum15 = new System.Windows.Forms.Label();
@@ -86,10 +82,6 @@ namespace App
             this.lab_utilisateur = new System.Windows.Forms.Label();
             this.tabWishlist.SuspendLayout();
             this.tabMesAlbums.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabTousAlbums.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_allalb_15)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pic_allalb_14)).BeginInit();
@@ -125,6 +117,7 @@ namespace App
             // 
             // tabWishlist
             // 
+            this.tabWishlist.AutoScroll = true;
             this.tabWishlist.Controls.Add(this.lb_MaWishlist);
             this.tabWishlist.Location = new System.Drawing.Point(4, 47);
             this.tabWishlist.Name = "tabWishlist";
@@ -136,22 +129,19 @@ namespace App
             // 
             // lb_MaWishlist
             // 
-            this.lb_MaWishlist.AutoSize = true;
             this.lb_MaWishlist.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_MaWishlist.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb_MaWishlist.Location = new System.Drawing.Point(479, 15);
+            this.lb_MaWishlist.Location = new System.Drawing.Point(4, 15);
             this.lb_MaWishlist.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_MaWishlist.Name = "lb_MaWishlist";
-            this.lb_MaWishlist.Size = new System.Drawing.Size(195, 39);
+            this.lb_MaWishlist.Size = new System.Drawing.Size(1083, 39);
             this.lb_MaWishlist.TabIndex = 14;
             this.lb_MaWishlist.Text = "Ma wishlist";
+            this.lb_MaWishlist.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // tabMesAlbums
             // 
-            this.tabMesAlbums.Controls.Add(this.pictureBox4);
-            this.tabMesAlbums.Controls.Add(this.pictureBox3);
-            this.tabMesAlbums.Controls.Add(this.pictureBox2);
-            this.tabMesAlbums.Controls.Add(this.pictureBox1);
+            this.tabMesAlbums.AutoScroll = true;
             this.tabMesAlbums.Controls.Add(this.lb_MesAlbums);
             this.tabMesAlbums.Location = new System.Drawing.Point(4, 47);
             this.tabMesAlbums.Name = "tabMesAlbums";
@@ -160,48 +150,16 @@ namespace App
             this.tabMesAlbums.TabIndex = 2;
             this.tabMesAlbums.Text = "Mes albums";
             this.tabMesAlbums.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Location = new System.Drawing.Point(730, 84);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(186, 206);
-            this.pictureBox4.TabIndex = 15;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(497, 84);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(186, 206);
-            this.pictureBox3.TabIndex = 14;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(266, 84);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(186, 206);
-            this.pictureBox2.TabIndex = 13;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(29, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 206);
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.tabMesAlbums.Click += new System.EventHandler(this.tabMesAlbums_Click);
             // 
             // lb_MesAlbums
             // 
-            this.lb_MesAlbums.AutoSize = true;
             this.lb_MesAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_MesAlbums.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb_MesAlbums.Location = new System.Drawing.Point(473, 15);
+            this.lb_MesAlbums.Location = new System.Drawing.Point(4, 15);
             this.lb_MesAlbums.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_MesAlbums.Name = "lb_MesAlbums";
-            this.lb_MesAlbums.Size = new System.Drawing.Size(210, 39);
+            this.lb_MesAlbums.Size = new System.Drawing.Size(1083, 39);
             this.lb_MesAlbums.TabIndex = 11;
             this.lb_MesAlbums.Text = "Mes albums";
             this.lb_MesAlbums.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -255,7 +213,7 @@ namespace App
             // lb_titreAlbum15
             // 
             this.lb_titreAlbum15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum15.Location = new System.Drawing.Point(560, 1422);
+            this.lb_titreAlbum15.Location = new System.Drawing.Point(560, 1387);
             this.lb_titreAlbum15.Name = "lb_titreAlbum15";
             this.lb_titreAlbum15.Size = new System.Drawing.Size(210, 57);
             this.lb_titreAlbum15.TabIndex = 64;
@@ -265,7 +223,7 @@ namespace App
             // lb_titreAlbum14
             // 
             this.lb_titreAlbum14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum14.Location = new System.Drawing.Point(296, 1422);
+            this.lb_titreAlbum14.Location = new System.Drawing.Point(296, 1387);
             this.lb_titreAlbum14.Name = "lb_titreAlbum14";
             this.lb_titreAlbum14.Size = new System.Drawing.Size(210, 57);
             this.lb_titreAlbum14.TabIndex = 63;
@@ -275,7 +233,7 @@ namespace App
             // lb_titreAlbum13
             // 
             this.lb_titreAlbum13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum13.Location = new System.Drawing.Point(40, 1422);
+            this.lb_titreAlbum13.Location = new System.Drawing.Point(40, 1387);
             this.lb_titreAlbum13.Name = "lb_titreAlbum13";
             this.lb_titreAlbum13.Size = new System.Drawing.Size(210, 57);
             this.lb_titreAlbum13.TabIndex = 62;
@@ -285,7 +243,7 @@ namespace App
             // lb_titreAlbum12
             // 
             this.lb_titreAlbum12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum12.Location = new System.Drawing.Point(816, 1073);
+            this.lb_titreAlbum12.Location = new System.Drawing.Point(816, 1038);
             this.lb_titreAlbum12.Name = "lb_titreAlbum12";
             this.lb_titreAlbum12.Size = new System.Drawing.Size(210, 55);
             this.lb_titreAlbum12.TabIndex = 61;
@@ -295,7 +253,7 @@ namespace App
             // lb_titreAlbum11
             // 
             this.lb_titreAlbum11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum11.Location = new System.Drawing.Point(560, 1073);
+            this.lb_titreAlbum11.Location = new System.Drawing.Point(560, 1038);
             this.lb_titreAlbum11.Name = "lb_titreAlbum11";
             this.lb_titreAlbum11.Size = new System.Drawing.Size(210, 55);
             this.lb_titreAlbum11.TabIndex = 60;
@@ -305,7 +263,7 @@ namespace App
             // lb_titreAlbum10
             // 
             this.lb_titreAlbum10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum10.Location = new System.Drawing.Point(296, 1073);
+            this.lb_titreAlbum10.Location = new System.Drawing.Point(296, 1038);
             this.lb_titreAlbum10.Name = "lb_titreAlbum10";
             this.lb_titreAlbum10.Size = new System.Drawing.Size(210, 55);
             this.lb_titreAlbum10.TabIndex = 59;
@@ -316,7 +274,7 @@ namespace App
             // 
             this.lb_titreAlbum9.AutoEllipsis = true;
             this.lb_titreAlbum9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum9.Location = new System.Drawing.Point(40, 1073);
+            this.lb_titreAlbum9.Location = new System.Drawing.Point(40, 1038);
             this.lb_titreAlbum9.Name = "lb_titreAlbum9";
             this.lb_titreAlbum9.Size = new System.Drawing.Size(210, 55);
             this.lb_titreAlbum9.TabIndex = 58;
@@ -326,7 +284,7 @@ namespace App
             // lb_titreAlbum8
             // 
             this.lb_titreAlbum8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum8.Location = new System.Drawing.Point(816, 736);
+            this.lb_titreAlbum8.Location = new System.Drawing.Point(816, 701);
             this.lb_titreAlbum8.Name = "lb_titreAlbum8";
             this.lb_titreAlbum8.Size = new System.Drawing.Size(210, 53);
             this.lb_titreAlbum8.TabIndex = 57;
@@ -336,7 +294,7 @@ namespace App
             // lb_titreAlbum7
             // 
             this.lb_titreAlbum7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum7.Location = new System.Drawing.Point(558, 736);
+            this.lb_titreAlbum7.Location = new System.Drawing.Point(558, 701);
             this.lb_titreAlbum7.Name = "lb_titreAlbum7";
             this.lb_titreAlbum7.Size = new System.Drawing.Size(210, 53);
             this.lb_titreAlbum7.TabIndex = 56;
@@ -346,7 +304,7 @@ namespace App
             // lb_titreAlbum6
             // 
             this.lb_titreAlbum6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum6.Location = new System.Drawing.Point(294, 736);
+            this.lb_titreAlbum6.Location = new System.Drawing.Point(294, 701);
             this.lb_titreAlbum6.Name = "lb_titreAlbum6";
             this.lb_titreAlbum6.Size = new System.Drawing.Size(210, 53);
             this.lb_titreAlbum6.TabIndex = 55;
@@ -357,7 +315,7 @@ namespace App
             // 
             this.lb_titreAlbum5.AutoEllipsis = true;
             this.lb_titreAlbum5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum5.Location = new System.Drawing.Point(38, 736);
+            this.lb_titreAlbum5.Location = new System.Drawing.Point(40, 701);
             this.lb_titreAlbum5.Name = "lb_titreAlbum5";
             this.lb_titreAlbum5.Size = new System.Drawing.Size(210, 53);
             this.lb_titreAlbum5.TabIndex = 54;
@@ -366,21 +324,21 @@ namespace App
             // 
             // lb_tousLesAlbums
             // 
-            this.lb_tousLesAlbums.AutoSize = true;
             this.lb_tousLesAlbums.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_tousLesAlbums.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lb_tousLesAlbums.Location = new System.Drawing.Point(424, 16);
+            this.lb_tousLesAlbums.Location = new System.Drawing.Point(4, 16);
             this.lb_tousLesAlbums.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_tousLesAlbums.Name = "lb_tousLesAlbums";
-            this.lb_tousLesAlbums.Size = new System.Drawing.Size(280, 39);
+            this.lb_tousLesAlbums.Size = new System.Drawing.Size(1059, 39);
             this.lb_tousLesAlbums.TabIndex = 53;
             this.lb_tousLesAlbums.Text = "Tous les albums";
             this.lb_tousLesAlbums.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lb_tousLesAlbums.Click += new System.EventHandler(this.lb_tousLesAlbums_Click);
             // 
             // lb_titreAlbum4
             // 
             this.lb_titreAlbum4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum4.Location = new System.Drawing.Point(814, 389);
+            this.lb_titreAlbum4.Location = new System.Drawing.Point(816, 354);
             this.lb_titreAlbum4.Name = "lb_titreAlbum4";
             this.lb_titreAlbum4.Size = new System.Drawing.Size(218, 58);
             this.lb_titreAlbum4.TabIndex = 48;
@@ -390,7 +348,7 @@ namespace App
             // lb_titreAlbum3
             // 
             this.lb_titreAlbum3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum3.Location = new System.Drawing.Point(558, 389);
+            this.lb_titreAlbum3.Location = new System.Drawing.Point(560, 354);
             this.lb_titreAlbum3.Name = "lb_titreAlbum3";
             this.lb_titreAlbum3.Size = new System.Drawing.Size(210, 58);
             this.lb_titreAlbum3.TabIndex = 47;
@@ -400,7 +358,7 @@ namespace App
             // lb_titreAlbum2
             // 
             this.lb_titreAlbum2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum2.Location = new System.Drawing.Point(294, 389);
+            this.lb_titreAlbum2.Location = new System.Drawing.Point(296, 354);
             this.lb_titreAlbum2.Name = "lb_titreAlbum2";
             this.lb_titreAlbum2.Size = new System.Drawing.Size(210, 58);
             this.lb_titreAlbum2.TabIndex = 46;
@@ -410,7 +368,7 @@ namespace App
             // lb_titreAlbum1
             // 
             this.lb_titreAlbum1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_titreAlbum1.Location = new System.Drawing.Point(41, 389);
+            this.lb_titreAlbum1.Location = new System.Drawing.Point(43, 354);
             this.lb_titreAlbum1.Name = "lb_titreAlbum1";
             this.lb_titreAlbum1.Size = new System.Drawing.Size(210, 58);
             this.lb_titreAlbum1.TabIndex = 45;
@@ -419,7 +377,7 @@ namespace App
             // 
             // pic_allalb_15
             // 
-            this.pic_allalb_15.Location = new System.Drawing.Point(565, 1167);
+            this.pic_allalb_15.Location = new System.Drawing.Point(565, 1132);
             this.pic_allalb_15.Name = "pic_allalb_15";
             this.pic_allalb_15.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -429,7 +387,7 @@ namespace App
             // 
             // pic_allalb_14
             // 
-            this.pic_allalb_14.Location = new System.Drawing.Point(301, 1167);
+            this.pic_allalb_14.Location = new System.Drawing.Point(301, 1132);
             this.pic_allalb_14.Name = "pic_allalb_14";
             this.pic_allalb_14.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -439,7 +397,7 @@ namespace App
             // 
             // pic_allalb_13
             // 
-            this.pic_allalb_13.Location = new System.Drawing.Point(45, 1167);
+            this.pic_allalb_13.Location = new System.Drawing.Point(45, 1132);
             this.pic_allalb_13.Name = "pic_allalb_13";
             this.pic_allalb_13.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -449,7 +407,7 @@ namespace App
             // 
             // pic_allalb_12
             // 
-            this.pic_allalb_12.Location = new System.Drawing.Point(821, 819);
+            this.pic_allalb_12.Location = new System.Drawing.Point(821, 784);
             this.pic_allalb_12.Name = "pic_allalb_12";
             this.pic_allalb_12.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -459,7 +417,7 @@ namespace App
             // 
             // pic_allalb_11
             // 
-            this.pic_allalb_11.Location = new System.Drawing.Point(565, 819);
+            this.pic_allalb_11.Location = new System.Drawing.Point(565, 784);
             this.pic_allalb_11.Name = "pic_allalb_11";
             this.pic_allalb_11.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -469,7 +427,7 @@ namespace App
             // 
             // pic_allalb_10
             // 
-            this.pic_allalb_10.Location = new System.Drawing.Point(301, 819);
+            this.pic_allalb_10.Location = new System.Drawing.Point(301, 784);
             this.pic_allalb_10.Name = "pic_allalb_10";
             this.pic_allalb_10.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -479,7 +437,7 @@ namespace App
             // 
             // pic_allalb_9
             // 
-            this.pic_allalb_9.Location = new System.Drawing.Point(45, 819);
+            this.pic_allalb_9.Location = new System.Drawing.Point(45, 784);
             this.pic_allalb_9.Name = "pic_allalb_9";
             this.pic_allalb_9.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -489,7 +447,7 @@ namespace App
             // 
             // pic_allalb_8
             // 
-            this.pic_allalb_8.Location = new System.Drawing.Point(819, 482);
+            this.pic_allalb_8.Location = new System.Drawing.Point(821, 447);
             this.pic_allalb_8.Name = "pic_allalb_8";
             this.pic_allalb_8.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -499,7 +457,7 @@ namespace App
             // 
             // pic_allalb_7
             // 
-            this.pic_allalb_7.Location = new System.Drawing.Point(563, 482);
+            this.pic_allalb_7.Location = new System.Drawing.Point(565, 447);
             this.pic_allalb_7.Name = "pic_allalb_7";
             this.pic_allalb_7.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -509,7 +467,7 @@ namespace App
             // 
             // pic_allalb_6
             // 
-            this.pic_allalb_6.Location = new System.Drawing.Point(299, 482);
+            this.pic_allalb_6.Location = new System.Drawing.Point(301, 447);
             this.pic_allalb_6.Name = "pic_allalb_6";
             this.pic_allalb_6.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -519,7 +477,7 @@ namespace App
             // 
             // pic_allalb_5
             // 
-            this.pic_allalb_5.Location = new System.Drawing.Point(43, 482);
+            this.pic_allalb_5.Location = new System.Drawing.Point(45, 447);
             this.pic_allalb_5.Name = "pic_allalb_5";
             this.pic_allalb_5.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -529,7 +487,7 @@ namespace App
             // 
             // pic_allalb_4
             // 
-            this.pic_allalb_4.Location = new System.Drawing.Point(819, 137);
+            this.pic_allalb_4.Location = new System.Drawing.Point(821, 102);
             this.pic_allalb_4.Name = "pic_allalb_4";
             this.pic_allalb_4.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -539,7 +497,7 @@ namespace App
             // 
             // pic_allalb_3
             // 
-            this.pic_allalb_3.Location = new System.Drawing.Point(563, 137);
+            this.pic_allalb_3.Location = new System.Drawing.Point(565, 102);
             this.pic_allalb_3.Name = "pic_allalb_3";
             this.pic_allalb_3.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -549,7 +507,7 @@ namespace App
             // 
             // pic_allalb_2
             // 
-            this.pic_allalb_2.Location = new System.Drawing.Point(299, 137);
+            this.pic_allalb_2.Location = new System.Drawing.Point(301, 102);
             this.pic_allalb_2.Name = "pic_allalb_2";
             this.pic_allalb_2.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -561,7 +519,7 @@ namespace App
             // 
             this.pic_allalb_1.BackColor = System.Drawing.SystemColors.Control;
             this.pic_allalb_1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pic_allalb_1.Location = new System.Drawing.Point(43, 137);
+            this.pic_allalb_1.Location = new System.Drawing.Point(45, 102);
             this.pic_allalb_1.Name = "pic_allalb_1";
             this.pic_allalb_1.Size = new System.Drawing.Size(208, 235);
             this.pic_allalb_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -600,6 +558,7 @@ namespace App
             // 
             // tabRecherche
             // 
+            this.tabRecherche.AutoScroll = true;
             this.tabRecherche.Controls.Add(this.lab_SearchKeyWord);
             this.tabRecherche.Controls.Add(this.lab_SearchCategorie);
             this.tabRecherche.Controls.Add(this.lab_SearchGenre);
@@ -653,33 +612,35 @@ namespace App
             // 
             // lab_Filtrer
             // 
-            this.lab_Filtrer.AutoSize = true;
             this.lab_Filtrer.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lab_Filtrer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lab_Filtrer.Location = new System.Drawing.Point(482, 16);
+            this.lab_Filtrer.Location = new System.Drawing.Point(4, 16);
             this.lab_Filtrer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lab_Filtrer.Name = "lab_Filtrer";
-            this.lab_Filtrer.Size = new System.Drawing.Size(191, 39);
+            this.lab_Filtrer.Size = new System.Drawing.Size(1083, 39);
             this.lab_Filtrer.TabIndex = 27;
             this.lab_Filtrer.Text = "Recherche";
+            this.lab_Filtrer.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // comboBox_Catégorie
             // 
+            this.comboBox_Catégorie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Catégorie.FormattingEnabled = true;
             this.comboBox_Catégorie.Location = new System.Drawing.Point(849, 90);
             this.comboBox_Catégorie.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Catégorie.Name = "comboBox_Catégorie";
-            this.comboBox_Catégorie.Size = new System.Drawing.Size(160, 39);
+            this.comboBox_Catégorie.Size = new System.Drawing.Size(160, 33);
             this.comboBox_Catégorie.TabIndex = 26;
             this.comboBox_Catégorie.Text = "Exemple";
             // 
             // comboBox_Genre
             // 
+            this.comboBox_Genre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox_Genre.FormattingEnabled = true;
             this.comboBox_Genre.Location = new System.Drawing.Point(485, 90);
             this.comboBox_Genre.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox_Genre.Name = "comboBox_Genre";
-            this.comboBox_Genre.Size = new System.Drawing.Size(160, 39);
+            this.comboBox_Genre.Size = new System.Drawing.Size(160, 33);
             this.comboBox_Genre.TabIndex = 25;
             this.comboBox_Genre.Text = "Exemple";
             // 
@@ -699,7 +660,7 @@ namespace App
             this.link_Deconnexion.Cursor = System.Windows.Forms.Cursors.Hand;
             this.link_Deconnexion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_Deconnexion.LinkColor = System.Drawing.Color.White;
-            this.link_Deconnexion.Location = new System.Drawing.Point(956, 56);
+            this.link_Deconnexion.Location = new System.Drawing.Point(945, 56);
             this.link_Deconnexion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.link_Deconnexion.Name = "link_Deconnexion";
             this.link_Deconnexion.Size = new System.Drawing.Size(139, 26);
@@ -763,13 +724,7 @@ namespace App
             this.Text = "BD\'liotheque";
             this.Load += new System.EventHandler(this.BDliotheque_Load);
             this.tabWishlist.ResumeLayout(false);
-            this.tabWishlist.PerformLayout();
             this.tabMesAlbums.ResumeLayout(false);
-            this.tabMesAlbums.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabTousAlbums.ResumeLayout(false);
             this.tabTousAlbums.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pic_allalb_15)).EndInit();
@@ -808,10 +763,6 @@ namespace App
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lb_nom_utilisateur;
         private System.Windows.Forms.Label lab_utilisateur;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TabPage tabRecherche;
         private System.Windows.Forms.Label lab_SearchKeyWord;
         private System.Windows.Forms.Label lab_SearchCategorie;

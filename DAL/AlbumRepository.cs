@@ -12,7 +12,7 @@ namespace DAL
             Session.Flush();
         }
 
-        public List<Album> GetAll()
+        public IList<Album> GetAll()
         {
             return Session.Query<Album>().ToList();
         }

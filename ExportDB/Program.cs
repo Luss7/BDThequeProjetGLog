@@ -179,11 +179,6 @@ namespace ExportDB
 
                 UtilisateurRepository utilisateurRepository = new UtilisateurRepository();
                 Utilisateur bpesquet = new Utilisateur("bpesquet", "jaimelegenielog");
-                bpesquet.Bibliotheque.Add(alb1);
-                bpesquet.Bibliotheque.Add(alb2);
-
-                bpesquet.Wishlist.Add(alb3);
-                bpesquet.Wishlist.Add(alb4);
 
                 categorieRepository.Save(manga);
                 categorieRepository.Save(bd);

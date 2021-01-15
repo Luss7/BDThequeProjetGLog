@@ -17,11 +17,7 @@ namespace Domain
             Login = login;
             Mdp = mdp;
         }
-        public virtual void Acheter(Album album)
-        {
-            Wishlist.Remove(album);
-            Bibliotheque.Add(album);
-        }
+
 
     }
 }

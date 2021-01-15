@@ -12,7 +12,7 @@ namespace DAL
             Session.Flush();
         }
 
-        public List<Utilisateur> GetAll()
+        public IList<Utilisateur> GetAll()
         {
             return Session.Query<Utilisateur>().ToList();
         }

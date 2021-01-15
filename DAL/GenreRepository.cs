@@ -12,7 +12,7 @@ namespace DAL
             Session.Flush();
         }
 
-        public List<Genre> GetAll()
+        public IList<Genre> GetAll()
         {
             return Session.Query<Genre>().ToList();
         }

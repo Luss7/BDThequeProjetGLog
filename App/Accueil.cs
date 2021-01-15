@@ -1,7 +1,5 @@
 ﻿using DAL;
-using Domain;
 using System;
-using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace App
@@ -35,65 +33,65 @@ namespace App
             this.serieRepository = serieRepository;
             this.utilisateurRepository = utilisateurRepository;
 
-           // AfficherContenu();
+            // AfficherContenu();
         }
 
-    /*   private void AfficherContenu()
-        {
-            try
+        /*   private void AfficherContenu()
             {
-                dgvUtils.Rows.Clear();  // suppression des éventuelles lignes existantes
-                // Accès à la liste des albums et remplissage du tableau
-                foreach (Album album in albumRepository.GetAll())
+                try
                 {
-                    dgvUtils.Rows.Add(album.Decrire());
-                }
-                // tri sur la 1ère colonne (nom)
-                dgvUtils.Sort(dgvUtils.Columns[0], ListSortDirection.Ascending);
+                    dgvUtils.Rows.Clear();  // suppression des éventuelles lignes existantes
+                    // Accès à la liste des albums et remplissage du tableau
+                    foreach (Album album in albumRepository.GetAll())
+                    {
+                        dgvUtils.Rows.Add(album.Decrire());
+                    }
+                    // tri sur la 1ère colonne (nom)
+                    dgvUtils.Sort(dgvUtils.Columns[0], ListSortDirection.Ascending);
 
-                dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
-                // Accès à la liste des auteurs et remplissage du tableau
-                foreach (Auteur auteur in auteurRepository.GetAll())
+                    dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
+                    // Accès à la liste des auteurs et remplissage du tableau
+                    foreach (Auteur auteur in auteurRepository.GetAll())
+                    {
+                        dgvLivres.Rows.Add(auteur.Decrire());
+                    }
+                    // tri sur la 1ère colonne (ISBN)
+                    dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
+
+                    dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
+                    // Accès à la liste des catégories et remplissage du tableau
+                    foreach (Categorie categorie in categorieRepository.GetAll())
+                    {
+                        dgvLivres.Rows.Add(categorie.Decrire());
+                    }
+                    // tri sur la 1ère colonne (ISBN)
+                    dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
+
+
+                    dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
+                    // Accès à la liste des genres et remplissage du tableau
+                    foreach (Genre genre in genreRepository.GetAll())
+                    {
+                        dgvLivres.Rows.Add(genre.Decrire());
+                    }
+                    // tri sur la 1ère colonne (ISBN)
+                    dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
+
+
+                    dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
+                    // Accès à la liste des series et remplissage du tableau
+                    foreach (Serie serie in serieRepository.GetAll())
+                    {
+                        dgvLivres.Rows.Add(serie.Decrire());
+                    }
+                    // tri sur la 1ère colonne (ISBN)
+                    dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
+                }
+                catch (Exception e)
                 {
-                    dgvLivres.Rows.Add(auteur.Decrire());
+                    MessageBox.Show(e.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
-                // tri sur la 1ère colonne (ISBN)
-                dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
-
-                dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
-                // Accès à la liste des catégories et remplissage du tableau
-                foreach (Categorie categorie in categorieRepository.GetAll())
-                {
-                    dgvLivres.Rows.Add(categorie.Decrire());
-                }
-                // tri sur la 1ère colonne (ISBN)
-                dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
-
-
-                dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
-                // Accès à la liste des genres et remplissage du tableau
-                foreach (Genre genre in genreRepository.GetAll())
-                {
-                    dgvLivres.Rows.Add(genre.Decrire());
-                }
-                // tri sur la 1ère colonne (ISBN)
-                dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
-
-
-                dgvLivres.Rows.Clear();  // suppression des éventuelles lignes existantes
-                // Accès à la liste des series et remplissage du tableau
-                foreach (Serie serie in serieRepository.GetAll())
-                {
-                    dgvLivres.Rows.Add(serie.Decrire());
-                }
-                // tri sur la 1ère colonne (ISBN)
-                dgvLivres.Sort(dgvLivres.Columns[0], ListSortDirection.Ascending);
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show(e.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }*/
+            }*/
 
         private void btn_MyAlbums_Click(object sender, EventArgs e)
         {

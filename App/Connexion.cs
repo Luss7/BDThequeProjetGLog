@@ -6,9 +6,9 @@ namespace App
 {
     public partial class Connexion : Form
     {
-        private List<Utilisateur> users;
+        private IList<Utilisateur> users;
         private Utilisateur user;
-        public Connexion(List<Utilisateur> utilisateurs)
+        public Connexion(IList<Utilisateur> utilisateurs)
         {
             InitializeComponent();
             users = utilisateurs;
@@ -45,7 +45,7 @@ namespace App
                 }
             }
             else MessageBox.Show("Aucun utilisateur récupéré");
-           
+
         }
         private void SetUtilisateur(Utilisateur utilisateur)
         {

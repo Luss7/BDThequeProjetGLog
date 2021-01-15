@@ -4,13 +4,13 @@
     <Position X="0.75" Y="1" Width="2.75" />
     <AssociationLine Name="Wishlist" Type="Domain.Album" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="3.5" Y="2.322" />
-        <Point X="7.75" Y="2.322" />
+        <Point X="3.5" Y="2.213" />
+        <Point X="7.75" Y="2.213" />
         <Point X="7.75" Y="3" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>ADACAAAACAAAAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAA=</HashCode>
+      <HashCode>ACACAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAQAAAAAAA=</HashCode>
       <FileName>Utilisateur.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -37,7 +37,7 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAkAAoBBAAAAAAAAAAAAAAAABAAAAE=</HashCode>
+      <HashCode>AAACAAAAAAAAAAAkAAoBBAAAACAAAAAAAAAAABAAAAE=</HashCode>
       <FileName>Album.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

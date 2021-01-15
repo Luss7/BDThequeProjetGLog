@@ -6,7 +6,7 @@ namespace DAL
     public interface IUtilisateurRepository
     {
         //Récupère la liste des utilisateurs
-        List<Utilisateur> GetAll();
+        IList<Utilisateur> GetAll();
 
         //Sauvegarde un utilisateur
         void Save(Utilisateur utilisateur);
