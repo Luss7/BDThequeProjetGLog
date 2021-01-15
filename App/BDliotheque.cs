@@ -13,8 +13,8 @@ namespace App
     {
         private IUtilisateurRepository utilisateurRepository;
         private IAlbumRepository albumRepository;
-        private ICategorieRepository categorieRepository;
-        private IGenreRepository genreRepository;
+/*        private ICategorieRepository categorieRepository;
+        private IGenreRepository genreRepository;*/
         private Utilisateur utilisateur;
         private IList<Album> albums;
         private IList<Categorie> categories;
@@ -24,8 +24,8 @@ namespace App
             InitializeComponent();
             this.utilisateurRepository = utilisateurRepository;
             this.albumRepository = albumRepository;
-            this.genreRepository = genreRepository;
-            this.categorieRepository = categorieRepository;
+/*            this.genreRepository = genreRepository;
+            this.categorieRepository = categorieRepository;*/
             utilisateur = utilisateurRepository.GetAll()[0];
             albums = albumRepository.GetAll();
             categories = categorieRepository.GetAll();
